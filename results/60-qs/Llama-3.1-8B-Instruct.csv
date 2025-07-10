@@ -1,0 +1,548 @@
+id,question,category,standard-answer,standard-eval,domain-answer,domain-eval,rdf-onto-answer,rdf-onto-eval,omn-onto-answer,omn-onto-eval,ofn-onto-answer,ofn-onto-eval,owx-onto-answer,owx-onto-eval,ttl-onto-answer,ttl-onto-eval
+1,What are the common toppings of a Margherita Pizza?,IND,"Tomato sauce, mozzarella cheese, fresh basil leaves.",1,"The common toppings of a traditional Margherita Pizza are:
+
+1. Tomato sauce
+2. Fresh mozzarella cheese
+3. Fresh basil leaves",1,"Fresh tomatoes, mozzarella cheese, and basil.",1,"Tomato sauce, mozzarella cheese, fresh basil leaves.",1,"Tomato sauce, mozzarella cheese, fresh basil leaves.",1,"Tomato sauce, mozzarella cheese, fresh basil leaves.",1,"Fresh tomatoes, mozzarella cheese, and basil leaves.",1
+2,Is a FourCheesePizza considered a VegetarianPizza?,SUB,Yes.,1,Yes.,1,Yes.,1,Yes.,1,Yes.,1,Yes.,1,Yes.,1
+3,What toppings make a pizza classified as a HotAndSpicyPizza?,SUB,"Jalapenos, banana peppers, and pepperoni with a spicy sauce.",1,"Jalapeños, hot peppers, or spicy sausage are common toppings that make a pizza classified as a HotAndSpicyPizza.",1,"Jalapeños, Banana Peppers, and Ghost Peppers.",1,"Jalapeños, hot peppers, banana peppers, red pepper flakes, spicy Italian sausage, and habanero peppers.",1,"Pepperoni, jalapeños, banana peppers, and hot sauce.",1,"Jalapeños, banana peppers, hot sauce, red pepper flakes, or spicy Italian sausage.",1,"Jalapeños, banana peppers, pepperoni, and hot sauce.",1
+4,Which pizzas contain both MushroomTopping and MozzarellaTopping?,PROP,"There are several pizzas that contain both Mushroom Topping and Mozzarella Topping. Some examples include:
+
+1. Classic Mushroom Pizza
+2. Four Cheese Pizza with Mushrooms
+3. Meat Lover's Pizza with Mushrooms
+4. Supreme Pizza with",1,"Some popular pizzas that typically contain both Mushroom Topping and Mozzarella Topping are:
+
+1. Hawaiian Mushroom Pizza (with ham or Canadian bacon)
+2. Meat Lover's Pizza
+3. Four Cheese Pizza (with mushroom, often)
+4. Mushroom",1,"The pizzas that typically contain both Mushroom Topping and Mozzarella Topping are:
+
+- Classic Cheese Pizza with Mushroom
+- Mushroom and Cheese Pizza
+- Meat lovers pizza with mushroom and mozzarella
+- Four cheese pizza with mushroom",1,This information isn't available in my current database.,1,"The answer is not explicitly stated in the question. However, based on general pizza knowledge, most pizzas contain both Mushroom Topping and Mozzarella Topping. 
+
+If you want a list of specific pizzas that contain both toppings, here are a few examples",1,"The pizzas that contain both Mushroom Topping and Mozzarella Topping are:
+
+- Classic Cheese with Mushroom
+- Meat Lovers with Mushroom
+- Mushroom and Extra Cheese
+- Veggie Lovers with Mushroom",1,"The pizzas that typically contain both Mushroom Topping and Mozzarella Topping are:
+
+- Classic Cheese Pizza
+- Mushroom and Cheese Pizza
+- Meat Lovers Pizza (in some variations)
+- Supreme Pizza (in some variations)",1
+5,Can a pizza have both HamTopping and AnchovyTopping without violating any disjoint restrictions?,DISJ,Yes.,1,"Yes, it depends on the pizza topping model. In some models, HamTopping and AnchovyTopping are not disjoint, as they both belong to the MeatTopping category, which allows them to coexist.",1,Yes.,1,Yes.,1,Yes.,1,Yes.,1,Yes.,1
+6,What makes a pizza incompatible with a ThinAndCrispyBase?,DISJ,"A pizza being incompatible with a ThinAndCrispyBase would typically be due to an excessively thick or dense crust, or a high amount of toppings that compromise the base's crispiness.",1,"A pizza incompatible with a ThinAndCrispyBase typically has a ThickCrust or a DeepPanCrust, or excessive toppings that compromise the base's crispiness.",1,A thick crust or a high volume of toppings.,1,A ThickCrust.,1,"A pizza being incompatible with a ThinAndCrispyBase would typically be due to its topping or crust characteristics, such as:
+
+- Too thick or heavy crust
+- Excessive or dense toppings that compromise the base's crispiness
+- High-m",1,A thick or doughy crust.,1,"A thick crust, a high topping load, or a large diameter.",1
+7,What topping is classified as both spicy and vegetarian?,LOGIC,Jalapeño.,1,Jalapeños.,1,Jalapeño.,1,Jalapeño.,1,Jalapeño.,1,Jalapeño.,1,Jalapeño.,1
+8,Which pizzas are defined to contain exactly two toppings?,CARD,"The ""Hawaiian"" pizza is often defined to contain exactly two toppings: ham and pineapple.",1,"A ""single"" or a ""one-topping"" pizza is typically not defined as containing exactly two toppings. However, a ""single"" or a ""one-topping"" pizza is defined as containing exactly one topping.
+
+Pizzas that are specifically defined",1,There is no universally defined pizza with exactly two toppings.,1,"There isn't a specific pizza that is universally defined to contain exactly two toppings, as pizza toppings can vary greatly depending on the region and restaurant.",1,"The ""Trio"" or ""2-Topping"" pizzas at some pizza chains, such as Domino's, typically contain exactly two toppings.",1,I'm not aware of any official pizza definitions that specify exactly two toppings.,1,I couldn't find any specific information about pizzas that are defined to contain exactly two toppings.,1
+9,Are there any pizzas that are both AmericanPizza and VegetarianPizza?,SUB,Yes.,1,"Yes, many pizzas can be classified as both AmericanPizza and VegetarianPizza. Examples include:
+
+- Hawaiian Pizza (typically topped with ham or Canadian bacon, but some variations use vegetarian alternatives)
+- Veggie Pizza (with a variety of vegetables like bell",1,Yes.,1,Yes.,1,Yes.,1,"Yes, many pizzas meet both criteria, but a specific example is the ""Roasted Vegetable Pizza"" which is commonly found in American pizzerias.",1,Yes.,1
+10,Which toppings are disjoint with CheeseTopping?,DISJ,"PepperoniTopping, SausageTopping, BaconTopping, and HamTopping are disjoint with CheeseTopping.",1,"MeatTopping, HerbTopping, and SeafoodTopping are disjoint with CheeseTopping.",1,"BaconTopping, HamTopping, and SausageTopping are disjoint with CheeseTopping.",1,"PepperoniTopping, SausageTopping, BaconTopping, and HamTopping are disjoint with CheeseTopping.",1,"I'm not aware of the specifics of the CheeseTopping or the context in which it is being used. However, I can tell you that the term ""disjoint"" typically means having no elements in common.
+
+In this case, without more information",1,"I couldn't find any information about ""CheeseTopping"". However, based on the typical pizza topping structure, I'll provide a general answer. 
+
+The toppings disjoint with CheeseTopping would be:
+
+- Toppings that are categories of cheese",1,"The disjoint toppings with CheeseTopping are:
+
+- Fruits
+- Pickles
+- Olives",1
+11,Is a QuattroFormaggiPizza classified as a CheesePizza?,SUB,Yes.,1,Yes.,1,Yes.,1,Yes.,1,Yes.,1,Yes.,1,Yes.,1
+12,What toppings are used in a SloppyGiuseppePizza?,IND,"I couldn't find any information about a ""SloppyGiuseppePizza"".",1,"A Sloppy Giuseppe Pizza typically includes ham, sausage, and mushrooms.",1,"A Sloppy Giuseppe Pizza typically includes the following toppings: 
+
+- Pepperoni
+- Sausage
+- Bacon
+- Onions
+- Bell peppers",1,"The toppings used in a Sloppy Giuseppe Pizza are:
+
+- Pepperoni
+- Sausage
+- Bacon
+- Caramelized onions
+- Mozzarella cheese",1,"A Sloppy Giuseppe Pizza typically includes the following toppings: 
+
+Pepperoni, Sausage, Mushrooms, Onions, and Bell Peppers.",1,"I couldn't find any information on a ""SloppyGiuseppePizza.""",1,"A Sloppy Giuseppe Pizza typically includes pepperoni, sausage, mushrooms, onions, and bell peppers.",1
+13,What distinguishes a VegetarianPizza from a NonVegetarianPizza?,SUB,The presence or absence of meat.,1,The presence of animal-derived ingredients distinguishes a NonVegetarianPizza from a VegetarianPizza.,1,The presence or absence of meat as a topping distinguishes a VegetarianPizza from a NonVegetarianPizza.,1,"The presence or absence of animal-derived ingredients, typically meat, such as pepperoni, sausage, or bacon, distinguishes a VegetarianPizza from a NonVegetarianPizza.",1,The presence or absence of meat toppings distinguishes a VegetarianPizza from a NonVegetarianPizza.,1,"The presence or absence of animal-based ingredients such as meat (e.g., pepperoni, sausage), chicken, fish, or eggs distinguishes a VegetarianPizza from a NonVegetarianPizza.",1,"The presence or absence of animal-derived ingredients such as meat, seafood, or eggs distinguishes a VegetarianPizza from a NonVegetarianPizza.",1
+14,Which pizzas are defined to have a DeepPanBase?,PROP,"DeepPanBase is not a defined term in the context of pizza. However, it seems like you might be referring to the 'Deep Pan' crust type.",1,Deep Pan Pizzas typically have a DeepPanBase.,1,"DeepPanBase is not a well-known pizza base type. However, it's possible that you're referring to the Deep Pan pizza base, which is a type of pizza base. 
+
+The Deep Pan pizza base is used in certain types of pizzas,",1,The DeepPanBase is defined to have a Pizza Hut Pan Pizza.,1,"I'm not aware of any specific pizza types that are defined to have a ""DeepPanBase"".",1,Deep Pan Pizza and Pan Pizza.,1,"DeepPanBase is defined in the context of the UK's National Health Service (NHS) food standards, specifically in the ""Nutrition and Foodservice"" guidance. 
+
+According to the NHS guidance, pizzas with a DeepPanBase are typically those",1
+15,What type of base is used in a SoHoPizza?,IND,"A SoHoPizza uses a thin, hand-tossed crust, but it is specifically known for its thick, crispy pan base.",1,"A SoHoPizza typically uses a thin, hand-stretched Neapolitan-style base.",1,New York-style base is used in a SoHoPizza.,1,Thin crust.,1,New York-style pizza,1,Thin crust.,1,"The base used in a SoHo Pizza is a thin, crispy crust made from a yeast-based dough.",1
+16,Can a pizza have both PrawnTopping and ChickenTopping?,DISJ,Yes.,1,Yes.,1,Yes.,1,Yes.,1,Yes.,1,Yes.,1,Yes.,1
+17,What is the minimum number of toppings on a SupremePizza?,CARD,The minimum number of toppings on a Supreme Pizza is 4.,1,"The minimum number of toppings on a Supreme Pizza is typically 4: pepperoni, sausage, mushrooms, and onions.",1,The minimum number of toppings on a Supreme Pizza is 4.,1,The minimum number of toppings on a Supreme Pizza is 4.,1,The minimum number of toppings on a Supreme Pizza is 4.,1,The minimum number of toppings on a Supreme Pizza is typically 4.,1,4,1
+18,Is a VenezianaPizza suitable for vegetarians?,SUB,Yes.,1,"A traditional Veneziana pizza typically contains anchovies, making it unsuitable for vegetarians.",1,"A traditional Veneziana pizza typically includes ingredients such as anchovies, which are not suitable for vegetarians.",1,Yes.,1,"It depends on the specific recipe or ingredients used in the Veneziana Pizza. However, a traditional Veneziana Pizza typically includes ingredients like anchovies and sometimes ham or other meats, which would make it unsuitable for vegetarians.",1,Yes.,1,Yes.,1
+19,What spicy meat topping is commonly found on American-style pizzas?,IND,Pepperoni.,1,Pepperoni.,1,Pepperoni.,1,Pepperoni.,1,Pepperoni.,1,Pepperoni.,1,Pepperoni.,1
+20,Which pizzas include OliveTopping as one of their ingredients?,PROP,"Some popular pizzas that include Olive Topping as one of their ingredients are:
+
+- Hawaiian Pizza
+- Mediterranean Pizza
+- Greek Pizza
+- Meat Lover's Pizza
+- BBQ Chicken Pizza (varies by recipe)",1,"Some pizzas that typically include olive topping as one of their ingredients are:
+
+- Greek pizza
+- Mediterranean pizza
+- Italian-style pizza
+- Capricciosa pizza
+- Quattro Formaggi e Olive (Four Cheeses and Olives) pizza",1,"Some pizzas that typically include olive topping as one of their ingredients are:
+
+- Mediterranean pizza
+- Greek pizza
+- Italian-style pizza
+- Artichoke and olive pizza
+- Capricciosa pizza",1,"Some common pizzas that include olive topping as one of their ingredients are:
+
+- Mediterranean pizza
+- Greek pizza
+- Italian-style pizza
+- Toscana pizza",1,"Some popular pizzas that typically include Olive Topping as one of their ingredients are:
+
+- Mediterranean pizza
+- Greek pizza
+- Italian-style pizza
+- Four Seasons pizza
+- Hawaiian-style pizza with olives (in addition to ham or Canadian bacon and",1,"Some popular pizzas that typically include Olive Topping as one of their ingredients are:
+
+- Mediterranean Pizza
+- Greek Pizza
+- Italian-Style Pizza
+- Garlic Chicken Pizza (in some variations)
+- Various specialty or gourmet pizzas.",1,"Some popular pizzas that include olive topping as one of their ingredients are:
+
+1. Mediterranean Pizza
+2. Greek Pizza
+3. Italian-Style Pizza
+4. Artichoke and Olive Pizza
+5. Classic Cheese with Olives Pizza",1
+21,Are there any pizzas defined to be both HotAndSpicy and Vegetarian?,SUB,"Yes, some examples include:
+
+- Spicy Veggie Pizza (typically topped with jalapenos, red peppers, and vegetarian ingredients)
+- Roasted Veggie Pizza with spicy sauce (featuring roasted vegetables and a spicy sauce)
+- Mediterranean Spicy",1,"Yes, some examples of pizzas that are both HotAndSpicy and Vegetarian include:
+
+1. Spicy Veggie Pizza: Typically features roasted vegetables like bell peppers, onions, and mushrooms, along with spicy peppers or hot sauce.
+2. Jal",1,"Yes, some examples include:
+
+- Spicy Veggie Pizza
+- Hot Veggie Pizza
+- Veggie Inferno Pizza
+- Spicy Mushroom Pizza",1,"Yes, some examples include:
+
+- Hawaiian Hot Pizza (typically contains ham or Canadian bacon, but variations exist with vegetarian options like roasted vegetables or tofu)
+- Spicy Veggie Pizza (common in various pizza chains and restaurants)
+- Veggie Hotline",1,Yes.,1,"Yes, some examples include:
+
+- Hawaiian pizza with jalapenos
+- Spicy Veggie pizza
+- Veggie Extravaganza with hot peppers
+- Mediterranean pizza with feta and hot peppers",1,"Yes, some pizzas can be defined as both HotAndSpicy and Vegetarian.",1
+22,What kind of topping is RocketTopping categorized as?,SUB,RocketTopping is categorized as a type of chocolate topping.,1,"I couldn't find any information on a topping called ""RocketTopping"".",1,RocketTopping is categorized as a type of hot sauce.,1,RocketTopping is categorized as a type of caramel.,1,RocketTopping is categorized as a type of caramel topping.,1,RocketTopping is categorized as a type of hot sauce topping.,1,RocketTopping is categorized as a caramel topping.,1
+23,Can a pizza be both a SeafoodPizza and a VegetarianPizza?,DISJ,No.,1,"No, a pizza cannot be both a SeafoodPizza and a VegetarianPizza simultaneously.",1,No.,1,No.,1,No.,1,No.,1,No.,1
+24,What are the common toppings on a NapolitanaPizza?,IND,"Tomato sauce, mozzarella cheese, anchovies, capers, and fresh basil.",1,"The common toppings on a Napolitana Pizza are tomato sauce, mozzarella cheese, and fresh basil leaves.",1,"The common toppings on a Napolitana pizza include tomato sauce, mozzarella cheese, and fresh basil leaves.",1,"The common toppings on a Napolitana pizza are tomato sauce, mozzarella cheese, and fresh basil.",1,"Tomato sauce, mozzarella cheese, anchovies, and fresh basil leaves.",1,"Tomato sauce, mozzarella cheese, and fresh basil leaves are common toppings on a Napolitana pizza.",1,"The common toppings on a Napolitana Pizza are tomato sauce, mozzarella cheese, and fresh basil.",1
+25,What is the difference between a TomatoTopping and a SundriedTomatoTopping?,SUB,"I couldn't find any information on the specific toppings ""TomatoTopping"" and ""SundriedTomatoTopping."" However, based on the general understanding of toppings and sundried tomatoes, I can provide a possible difference:
+
+TomatoT",1,"TomatoTopping and SundriedTomatoTopping differ in the processing method of the tomatoes. 
+
+TomatoTopping typically consists of fresh or cooked tomatoes that are crushed or pureed to create a sauce-like consistency.
+
+SundriedTomato",1,There is no information available about the specific differences between TomatoTopping and SundriedTomatoTopping.,1,"There is not enough information to determine the difference between a TomatoTopping and a SundriedTomatoTopping, as these are generic terms and not specific product names.",1,There is no information available about the specific differences between TomatoTopping and SundriedTomatoTopping.,1,"I couldn't find any information on ""TomatoTopping"" and ""SundriedTomatoTopping"".",1,There is no information available to determine the difference between a TomatoTopping and a SundriedTomatoTopping.,1
+26,What toppings are considered disjoint from MeatTopping?,DISJ,"VeggieTopping, SeafoodTopping, and DairyTopping are considered disjoint from MeatTopping.",1,"Non-MeatToppings are considered disjoint from MeatTopping. 
+
+Examples include:
+- VeggieTopping (vegetables)
+- FruitTopping (fruits)
+- SeafoodTopping (seafood)
+- DairyTopping (d",1,"VegetableTopping, SeafoodTopping, and DairyTopping are considered disjoint from MeatTopping.",1,"VeggieTopping, CheeseTopping, and SauceTopping are considered disjoint from MeatTopping.",1,"VegetableTopping, SauceTopping, and CheeseTopping are considered disjoint from MeatTopping.",1,"VeggieTopping, CheeseTopping, and SauceTopping are considered disjoint from MeatTopping.",1,"VegetableTopping, BreadTopping, and DairyTopping are considered disjoint from MeatTopping.",1
+27,What class of pizza does an AmericanHotPizza belong to?,SUB,An AmericanHotPizza belongs to the class of Meat Lovers pizza.,1,"An AmericanHotPizza belongs to the class of ""Meat-lovers"" or more specifically, the ""Pepperoni Pizza"" class.",1,An AmericanHotPizza belongs to the class of Pan Pizza.,1,An AmericanHotPizza belongs to the class of Pan Pizza.,1,"An AmericanHotPizza belongs to the class of ""Meat Lovers"" or more specifically ""Pepperoni"" pizza, but a more general classification would be ""Meat Lovers"" or ""Pepperoni"" pizza but more generally ""Me",1,An AmericanHotPizza belongs to the class of Meat Lovers or Pepperoni Pizza.,1,An AmericanHotPizza belongs to the class of Hot Pizza.,1
+28,Can a pizza have more than one type of cheese topping?,CARD,Yes.,1,Yes.,1,Yes.,1,Yes.,1,Yes.,1,Yes.,1,Yes.,1
+29,Which pizzas are built using a ThinAndCrispyBase?,PROP,"I'm not aware of any specific information about a ""ThinAndCrispyBase"" in the context of pizza building. However, I can provide a general answer based on the name:
+
+Some pizzas built using a thin and crispy crust base include:
+
+",1,"Thin crust, New York-style, and Neapolitan pizzas are typically built using a ThinAndCrispyBase.",1,"I'm not aware of any specific pizzas that are built using a ""ThinAndCrispyBase"" as this is not a standard pizza base type.",1,ThinCrustPrawnPizza and ThinCrustHawaiianPizza.,1,"ThinCrustPizza, GlutenFreeThinCrustPizza, ThinAndCrispyPizza.",1,"ThinAndCrispyBase is used to build the following pizzas:
+
+- ThinCrust
+- NewYorkStyle
+- RomanStyle",1,"ThinCrustMargherita, ThinCrustProsciutto, ThinCrustVegetarian, ThinCrustQuattroFormaggi, ThinCrustCapricciosa.",1
+30,Is there a pizza that includes both CaperTopping and AnchovyTopping?,PROP,Yes.,1,"Yes, there is a pizza that combines Caper Topping and Anchovy Topping. This pizza is often referred to as a ""Caponata Pizza"" or ""Italian-Style Pizza.""",1,"Yes, it's possible to find a pizza that includes both Capers and Anchovies.",1,"Yes, it is possible to find a pizza that includes both Caper Topping and Anchovy Topping.",1,"Yes, it's possible to find a pizza that includes both Caper Topping and Anchovy Topping.",1,Yes.,1,Yes.,1
+31,Which pizzas use GarlicTopping as an ingredient?,PROP,"I couldn't find any information on a GarlicTopping as a standard pizza topping. However, garlic is a common pizza topping. 
+
+Some popular pizzas that use garlic as an ingredient are:
+
+- Garlic Chicken Pizza
+- Meat Lover's Pizza (may",1,"Some popular pizzas that use garlic as a topping include:
+
+1. Garlic Chicken Pizza
+2. Garlic Parmesan Pizza
+3. Meat Lover's Pizza (often includes garlic as a base flavor)
+4. Italian Sausage Pizza (may include garlic",1,"The specific pizza that uses GarlicTopping as an ingredient is not provided in the question. However, it is a common topping for many types of pizzas. 
+
+Some popular pizza types that may include GarlicTopping as an ingredient are:
+
+- Garlic Chicken",1,"The pizzas that use GarlicTopping as an ingredient are:
+
+1. Meat Lover's Pizza
+2. Supreme Pizza
+3. Garlic Chicken Pizza",1,"The pizzas that use GarlicTopping as an ingredient are:
+
+- Hawaiian Garlic Pizza
+- Garlic Chicken Pizza
+- Garlic Shrimp Pizza
+- Meat Lover's Pizza (in some variations)
+- Mediterranean Pizza (in some variations)
+
+Please note that the",1,"The GarlicTopping is not a standard pizza topping, but rather a topping offered by Domino's Pizza. It is used on several Domino's pizzas, including the following:
+
+1. Garlic Lovers Pizza
+2. Italian Feast Pizza
+3. Meat",1,The information about specific pizzas using GarlicTopping as an ingredient is not available.,1
+32,What toppings are only allowed on a VegetarianPizza?,DISJ,"On a Vegetarian Pizza, the following toppings are allowed:
+
+- Vegetables (such as bell peppers, onions, mushrooms, etc.)
+- Cheese
+- Herbs (such as oregano, basil, etc.)
+- Tomato sauce
+- Ol",1,"Vegetarian pizza typically allows the following toppings: 
+
+- Vegetables (e.g., bell peppers, onions, mushrooms, olives, tomatoes)
+- Herbs (e.g., basil, oregano)
+- Cheese (e.g., mo",1,"Mushrooms, onions, bell peppers, olives, tomatoes, and vegan cheese.",1,"Some common toppings that are typically allowed on a Vegetarian Pizza include:
+
+- Vegetables (e.g., bell peppers, onions, mushrooms, tomatoes)
+- Herbs (e.g., basil, oregano)
+- Cheese (e.g., mo",1,"On a Vegetarian Pizza, the following toppings are typically allowed:
+
+1. Vegetables (e.g., bell peppers, onions, mushrooms, tomatoes)
+2. Cheese (e.g., mozzarella, parmesan)
+3. Herbs (e",1,"Vegetarian pizza typically allows the following toppings: 
+
+- Vegetables (such as bell peppers, onions, mushrooms, and tomatoes)
+- Cheese (including mozzarella, parmesan, and feta)
+- Herbs (such as basil and",1,"On a Vegetarian Pizza, the following toppings are typically allowed:
+
+- Vegetables (e.g., bell peppers, onions, mushrooms, tomatoes)
+- Cheese
+- Herbs (e.g., basil, oregano)
+- Fruits (e",1
+33,Is ArtichokeTopping considered a vegetable topping?,SUB,Yes.,1,Yes.,1,Yes.,1,Yes.,1,Yes.,1,Yes.,1,Yes.,1
+34,Which pizzas contain more than three toppings?,CARD,"Some pizzas that typically contain more than three toppings are:
+
+- Meat lovers
+- Supreme
+- Quattro formaggi (with four cheese toppings)
+- Hawaiian BBQ chicken
+- Mediterranean",1,"Some pizzas that typically contain more than three toppings are:
+
+- Meat lovers pizza: pepperoni, sausage, bacon, and sometimes ham.
+- Quadruple meat pizza: pepperoni, sausage, bacon, and ham.
+- Supreme pizza: pepperoni,",1,"Some examples of pizzas that typically contain more than three toppings include:
+
+- Meat Lover's (pepperoni, sausage, bacon, sometimes ham)
+- Supreme (pepperoni, sausage, mushrooms, onions, bell peppers)
+- Quattro Formaggi",1,"The answer is not provided as the question is too vague. However, I can provide some examples of pizzas that typically contain more than three toppings:
+
+- Meat lovers pizza (usually 4-6 toppings)
+- Supreme pizza (usually 4-6",1,"There are various types of pizzas with more than three toppings. Some examples include:
+
+- Meat lovers pizza (typically 5-6 toppings)
+- Supreme pizza (typically 5-6 toppings)
+- BBQ chicken pizza (typically 4-5 toppings",1,"Some pizzas that typically contain more than three toppings include:
+
+- Meat lovers pizza (usually 4-5 toppings)
+- Supreme pizza (usually 4-5 toppings)
+- Quadruple meat pizza (usually 4-5 toppings)
+- BBQ chicken",1,This answer cannot be provided as the question lacks context about the specific pizza menu or options.,1
+35,What distinguishes a MeatTopping from a FishTopping?,SUB,"A MeatTopping and a FishTopping are distinguished by the type of protein used, with a MeatTopping typically using ground meats (such as beef, pork, or lamb) and a FishTopping using fish (such as salmon, cod",1,"MeatTopping and FishTopping are distinguished by the type of protein used. 
+
+A MeatTopping typically features ground meats, sliced meats, or cured meats like pepperoni, sausage, or bacon.
+
+A FishTopping, on the other",1,"The primary distinction between a MeatTopping and a FishTopping is the type of animal protein used. 
+
+A MeatTopping typically contains meat from land animals, such as beef, pork, or lamb.
+
+A FishTopping, on the other",1,"The primary distinction is that a MeatTopping typically contains animal meat (e.g., beef, pork, chicken), while a FishTopping contains fish as the main ingredient.",1,"A MeatTopping and a FishTopping are distinguished by the type of protein used. 
+
+MeatTopping typically uses meat from land animals, such as beef, pork, or lamb.
+
+FishTopping uses fish as the primary protein source.",1,"The main distinction between a MeatTopping and a FishTopping is the type of animal protein used. 
+
+A MeatTopping typically contains meat from land animals, such as beef, pork, or lamb.
+
+A FishTopping, on the other",1,"The primary distinction between a MeatTopping and a FishTopping is the type of protein used. 
+
+MeatTopping typically contains ground meat from land animals, such as beef, pork, or lamb. 
+
+FishTopping, on the other",1
+36,Which topping would violate vegetarian restrictions if added to a MargheritaPizza?,DISJ,Pepperoni.,1,Pepperoni.,1,Pepperoni.,1,Pepperoni.,1,Pepperoni.,1,Pepperoni.,1,Pepperoni.,1
+37,What cheese toppings are used in a FourCheesePizza?,IND,"A Four Cheese Pizza typically features mozzarella, parmesan, provolone, and gorgonzola cheese toppings.",1,"A Four Cheese Pizza typically features a blend of four cheeses: mozzarella, parmesan, provolone, and gorgonzola.",1,"A Four Cheese Pizza typically includes the following cheese toppings: 
+
+1. Mozzarella
+2. Parmesan
+3. Provolone
+4. Gorgonzola",1,"A Four Cheese Pizza typically includes the following cheese toppings: 
+
+1. Mozzarella
+2. Parmesan
+3. Provolone
+4. Gorgonzola",1,"A Four Cheese Pizza typically includes the following cheese toppings: 
+
+1. Mozzarella
+2. Parmesan
+3. Provolone
+4. Gorgonzola",1,"A Four Cheese Pizza typically features mozzarella, parmesan, provolone, and gorgonzola as its cheese toppings.",1,"A Four Cheese Pizza typically includes the following cheese toppings: 
+
+1. Mozzarella
+2. Parmesan
+3. Provolone
+4. Gorgonzola",1
+38,Which pizzas contain both OnionTopping and PepperTopping?,PROP,The information is not available to provide a specific answer.,1,"Some popular pizzas that contain both Onion Topping and Pepper Topping include:
+
+- Hawaiian Onion Pepper Pizza (with ham or Canadian bacon)
+- Meat Lover's Pizza
+- 4 Cheese Onion Pepper Pizza
+- BBQ Chicken Onion Pepper Pizza
+- Sp",1,There is not enough information to provide a specific answer.,1,I don't have information on specific pizza combinations with OnionTopping and PepperTopping.,1,I don't have information about specific pizzas that contain both OnionTopping and PepperTopping.,1,I don't have information about specific pizzas containing OnionTopping and PepperTopping.,1,This information is not provided.,1
+39,Is there a pizza with both HamTopping and MushroomTopping?,PROP,Yes.,1,"Yes, many pizza variations combine HamTopping and MushroomTopping.",1,Yes.,1,Yes.,1,Yes.,1,Yes.,1,Yes.,1
+40,Which toppings are used in pizzas classified as SeafoodPizza?,SUB,"Shrimp, Calamari, Mussels, Crab, Anchovies, and sometimes Lobster.",1,"Seafood Pizza typically includes toppings such as:
+
+- Shrimp
+- Scallops
+- Mussels
+- Clams
+- Crab
+- Anchovies
+- sometimes Lobster",1,"The toppings used in Seafood Pizzas may vary, but common ones include:
+
+- Shrimp
+- Scallops
+- Crab
+- Lobster
+- Anchovies
+- Olives
+- Garlic
+- Fresh parsley
+- Capers",1,"Shrimp, scallops, mussels, clams, crab, and sometimes lobster.",1,"Typical toppings used in Seafood Pizzas include:
+
+- Shrimp
+- Scallops
+- Crab
+- Clams
+- Mussels
+- Anchovies (sometimes)
+- Garlic
+- Herbs like parsley or oregano
+",1,"Shrimp, mussels, clams, scallops, crab, and anchovies are commonly used toppings in Seafood Pizzas.",1,"Shrimp, Calamari, Mussels, Scallops, Crab, and Anchovies are commonly used toppings in Seafood Pizzas.",1
+41,Which pizza includes HotGreenPepperTopping?,IND,"I'm not aware of any standard pizza that includes Hot Green Pepper Topping. However, some specialty or custom pizzas might include it.",1,"The pizza that typically includes a Hot Green Pepper topping is the ""Korean BBQ Pizza"" or ""Spicy Korean Pizza.""",1,"I'm not aware of a specific pizza that includes Hot Green Pepper Topping as a standard topping. However, some pizza places may offer it as a custom or specialty topping.",1,"I couldn't find specific information about a pizza with the exact topping ""HotGreenPepperTopping."" However, some pizzas may include similar toppings like green pepper or jalapeño.",1,"The specific pizza with Hot Green Pepper topping is not universally known. However, some pizzas that might include Hot Green Pepper topping are:
+
+- The ""Devil's Pizza"" from Pizza Hut (in some countries)
+- The ""Spicy Italian"" from",1,"I'm not aware of any specific pizza that includes a ""HotGreenPepperTopping."" However, some pizzas may include green pepper or jalapeño as a topping. 
+
+If you're looking for a pizza with green pepper or jalapeño",1,"I'm not aware of a specific pizza that typically includes Hot Green Pepper Topping. However, some unique or specialty pizzas may include this topping.",1
+42,Is there a pizza that is both spicy and contains seafood toppings?,LOGIC,Yes.,1,"Yes, there are several types of pizza that combine spicy and seafood toppings.",1,Yes.,1,Yes.,1,Yes.,1,Yes.,1,Yes.,1
+43,What pizzas are incompatible with CheeseTopping?,DISJ,"Thin Crust Pizza, Cauliflower Crust Pizza, and Gluten-Free Crust Pizza are typically incompatible with CheeseTopping due to their unique crust compositions.",1,"Pizzas incompatible with CheeseTopping are:
+
+- Vegan pizzas
+- Lactose-free pizzas
+- Cheese-less pizzas (e.g., ""white"" pizzas with garlic sauce)
+- Some specialty pizzas with non-dairy cheese alternatives.",1,"The ""MeatLover"" and ""Veggie"" pizzas are incompatible with CheeseTopping.",1,There is no information provided about CheeseTopping.,1,I couldn't find any information on a CheeseTopping.,1,"The following pizzas are incompatible with CheeseTopping:
+
+- Veggie
+- Hawaiian",1,"The pizzas that are incompatible with CheeseTopping are:
+
+- Veggie pizzas (without cheese)
+- Mushroom and Spinach pizzas (without cheese)
+- Hawaiian pizzas (without cheese)
+- Mediterranean pizzas (without cheese)
+- Any other pizza that doesn't",1
+44,What are the ingredient constraints on a VegetarianHotPizza?,LOGIC,"The ingredient constraints on a VegetarianHotPizza typically include:
+
+- No meat (beef, pork, lamb, etc.)
+- No animal-derived ingredients like gelatin or honey
+- May include dairy products like cheese and milk
+- May include eggs",1,"For a VegetarianHotPizza, the ingredient constraints are:
+
+- No meat or animal by-products (e.g., sausage, bacon, ham).
+- May include vegetarian alternatives to meat (e.g., vegetarian sausage).
+- Must include cheese (e.g",1,"Meat, fish, poultry, and animal by-products.",1,"No animal-derived ingredients, no animal by-products, no animal-based gelatin, no honey.",1,"Meat, fish, and poultry are not allowed.",1,"The ingredient constraints on a VegetarianHotPizza are:
+
+- No meat or animal by-products
+- May include dairy products (e.g., cheese, milk)
+- May include eggs
+- May include animal-derived ingredients like gelatin or honey (depending",1,"No meat, no fish, no animal by-products.",1
+45,What pizza includes LeekTopping?,IND,I couldn't find any specific information about a pizza that includes Leek topping as a standard or well-known option.,1,Some specialty pizzas may include Leek topping.,1,"There isn't a widely recognized pizza specifically named ""LeekTopping."" However, some gourmet or specialty pizzas may feature leeks as a topping.",1,I couldn't find any specific information about a pizza that includes LeekTopping.,1,I couldn't find any specific information about a pizza that includes Leek topping.,1,I couldn't find any specific information about a pizza that includes Leek Topping as a standard or well-known option.,1,"There is no standard pizza that includes Leek Topping. However, it's possible that a custom or specialty pizza may include leeks as a topping.",1
+46,Which pizzas are defined using exactly one topping?,CARD,"Pepperoni pizza, Sausage pizza, Mushroom pizza, Bacon pizza, and Hawaiian pizza are defined using exactly one topping.",1,"A classic pizza is typically defined as having exactly one topping, often referred to as a ""Solo"" or ""Single-Topping"" pizza.",1,"Margherita, Hawaiian, and Quattro Formaggi",1,"A classic pizza, a Hawaiian pizza, a meat pizza, a veggie pizza, and a margherita pizza are defined using exactly one topping.",1,"Single topping pizzas are typically defined as ""Cheese"" or ""Meat Lover's"" is not always, but some places may have a ""Pepperoni"" or a ""Sausage"" as a single topping pizza, however the most common",1,"Margherita pizza is defined using exactly one topping, which is tomato sauce.",1,"Margherita, Hawaiian, and Quattro Formaggi are examples of pizzas that are often defined using exactly one topping.",1
+47,What kinds of pizzas can have PineappleTopping?,PROP,"Hawaiian, Hawaiian-style, Ham and Pineapple, Meat lovers, BBQ Chicken, and various other specialty pizzas.",1,"Hawaiian pizza, Ham and Pineapple pizza, Pineapple and Bacon pizza, Pineapple and Jalapeño pizza, BBQ Chicken and Pineapple pizza, and some variations of Meat lovers pizza with Pineapple topping.",1,"Hawaiian pizza, Ham and Pineapple pizza, Tropical pizza, Pineapple and Bacon pizza, and Pineapple BBQ chicken pizza.",1,"Hawaiian pizza, Hawaiian-style pizza, Pineapple BBQ chicken pizza, Tropical pizza, and some variations of BBQ chicken pizza.",1,"Hawaiian pizza, Ham and Pineapple pizza, Pineapple BBQ Chicken pizza, and various other specialty pizzas can have pineapple topping.",1,"Hawaiian, Ham and Pineapple, Pineapple BBQ Chicken, Pineapple and Bacon, Pineapple and Shrimp, Pineapple and Jalapeño, etc.",1,"Hawaiian pizza, Ham and Pineapple pizza, BBQ Chicken and Pineapple pizza, Meat lovers pizza with Pineapple, Pineapple and Bacon pizza, Pineapple and Shrimp pizza, and various other specialty pizzas can have Pineapple topping.",1
+48,Which toppings are used on pizzas with a DeepPanBase?,PROP,"The Deep Pan base is often associated with a thick crust and a rich, buttery flavor. Common toppings used on pizzas with a Deep Pan base include:
+
+- Mozzarella cheese
+- Tomato sauce
+- Pepperoni
+- Ham
+- Mushrooms",1,"Deep Pan pizzas often feature a thick crust and are typically topped with a combination of ingredients, including:
+
+- Mozzarella cheese
+- Tomato sauce
+- Pepperoni
+- Sausage
+- Mushrooms
+- Onions
+- Bacon
+-",1,"The Deep Pan base is typically associated with a variety of toppings, including:
+
+- Mozzarella cheese
+- Tomato sauce
+- Pepperoni
+- Ham
+- Mushrooms
+- Onions
+- Green peppers
+- Extra cheese",1,"Pepperoni, mushrooms, onions, bell peppers, olives, and sometimes ham.",1,"The Deep Pan base is often associated with a thick crust and a more traditional British-style pizza. Common toppings used on pizzas with a Deep Pan base include:
+
+- Pepperoni
+- Mozzarella cheese
+- Tomato sauce
+- Ham
+- Mushrooms",1,"The toppings used on pizzas with a DeepPanBase typically include mozzarella cheese, tomato sauce, and various meats such as pepperoni, sausage, and bacon. Some common vegetable toppings include mushrooms, onions, bell peppers, and olives.",1,Mozzarella cheese and tomato sauce are standard.,1
+49,Can a pizza be both ItalianPizza and AmericanPizza at the same time?,DISJ,No.,1,"Yes, a pizza can be both ItalianPizza and AmericanPizza at the same time, as it can incorporate elements from both styles, such as a thick crust from ItalianPizza and toppings commonly found in AmericanPizza.",1,No.,1,No.,1,No.,1,No.,1,No.,1
+50,What is the cardinality restriction on toppings for a MargheritaPizza?,CARD,The cardinality restriction on toppings for a MargheritaPizza is 0.,1,"For a MargheritaPizza, the cardinality restriction on toppings is typically 0 (or none).",1,The cardinality restriction on toppings for a MargheritaPizza is 0.,1,"Excluding the topping ""mozzarella"", there is no cardinality restriction on the number of toppings for a MargheritaPizza.",1,"Tomato sauce, cheese, and a set of toppings chosen from the set {Mozzarella, Artichoke, Anchovy, Bacon, Ham, Pineapple, Pepperoni, Sausage, Mushroom, Olives, Capers}.",1,The cardinality restriction on toppings for a MargheritaPizza is 0.,1,The cardinality restriction on toppings for a MargheritaPizza is 0.,1
+51,Are MozzarellaTopping and GoatCheeseTopping disjoint?,DISJ,Yes.,1,Yes.,1,Yes.,1,Yes.,1,Yes.,1,Yes.,1,Yes.,1
+52,Which pizzas include SpicyBeefTopping?,PROP,"I'm not aware of any pizzas that include a ""SpicyBeefTopping"". However, some pizza places may offer a ""Spicy Italian Sausage"" or ""Spicy Pepperoni"" topping.",1,"Some pizzas that include SpicyBeefTopping are:
+
+1. Meat Lover's Pizza
+2. Spicy Italian Pizza
+3. Beef and Jalapeño Pizza
+4. Spicy Supreme Pizza",1,"I'm not aware of any popular pizzas that include a specific topping called ""SpicyBeefTopping.""",1,I don't have information about specific pizzas that include the SpicyBeefTopping.,1,"I couldn't find any information on a ""SpicyBeefTopping"" pizza.",1,"I couldn't find any information about a pizza with the ""SpicyBeefTopping"".",1,"I'm not aware of any specific pizza that includes a ""SpicyBeefTopping"" as a standard topping. However, it's possible that some custom or specialty pizzas may offer a spicy beef topping.
+
+If you could provide more context or information",1
+53,Which pizzas are defined with no meat toppings at all?,LOGIC,"Some examples of pizzas that are typically defined with no meat toppings at all include:
+
+- Veggie pizza
+- Mushroom pizza
+- Cheese pizza
+- Hawaiian pizza (without the ham) is not true, since ham is a meat topping
+- Meat",1,"Some pizzas defined with no meat toppings at all include:
+
+- Veggie pizza
+- Margherita pizza
+- Mushroom pizza
+- Roasted vegetable pizza
+- Mediterranean pizza
+- Quattro formaggi pizza (an Italian cheese pizza with no meat",1,"Some examples of pizzas defined with no meat toppings at all include:
+
+- Veggie pizza
+- Margherita pizza
+- Hawaiian pizza without meat (typically with pineapple as the topping)
+- Mediterranean pizza
+- Roasted vegetable pizza
+- Mushroom pizza",1,"Some examples of pizzas that are typically defined with no meat toppings at all include:
+
+- Veggie pizza
+- Margherita pizza
+- Hawaiian is actually a pizza with ham so it's not a good example 
+- Mediterranean pizza
+- Garden pizza",1,"Some examples of pizzas defined with no meat toppings at all include:
+
+- Veggie pizza
+- Mushroom pizza
+- Hawaiian pizza (with no meat, but some people may consider ham as a meat topping)
+- Garden pizza
+- Mediterranean pizza
+-",1,"Some pizzas defined with no meat toppings at all include:
+
+- Veggie pizza
+- Mushroom pizza
+- Hawaiian pizza (without the ham)
+- Garden pizza
+- Mediterranean pizza",1,"Some examples of pizzas defined with no meat toppings at all are:
+
+1. Veggie pizza
+2. Hawaiian pizza (with a twist, typically no meat but ham is a common topping in some variations)
+3. Mushroom pizza
+4. Roasted",1
+54,Which toppings would be illegal to add to a classified VegetarianPizza?,DISJ,"Animal-derived meats such as:
+
+1. Bacon
+2. Ham
+3. Sausage
+4. Meatballs",1,"Meat products such as beef, pork, lamb, and chicken would be illegal to add to a classified VegetarianPizza.",1,"Animal-derived toppings such as:
+
+- Bacon
+- Ham
+- Sausage
+- Meatballs
+- Chicken",1,"Animal-derived toppings such as:
+
+1. Bacon
+2. Ham
+3. Sausage
+4. Chicken
+5. Shrimp
+6. Anchovies",1,"Animal-derived meat (e.g. pepperoni, sausage), animal-based gelatin, and animal-derived broths.",1,"Animal-derived toppings such as:
+
+1. Bacon
+2. Ham
+3. Sausage
+4. Meatballs
+5. Chicken",1,"Animal-derived meat (e.g., pepperoni, sausage), gelatin, and animal-based broth.",1
+55,Are there any pizzas that include both TomatoTopping and LeekTopping?,PROP,"Yes, some specialty pizzas may include both Tomato Topping and Leek Topping.",1,"Yes, some pizzas feature a combination of tomato and leek toppings.",1,"Yes, some pizzas may include both Tomato Topping and Leek Topping.",1,"Yes, some gourmet or specialty pizzas may include both Tomato Topping and Leek Topping.",1,"Yes, some specialty pizzas may include both Tomato Topping and Leek Topping.",1,"Yes, there are pizzas that include both Tomato Topping and Leek Topping.",1,"Yes, there are pizzas that include both Tomato Topping and Leek Topping.",1
+56,What type of pizzas include FishTopping but not CheeseTopping?,LOGIC,There is no standard pizza type that includes FishTopping but not CheeseTopping.,1,"There isn't a traditional pizza type that combines FishTopping and excludes CheeseTopping. However, a unique pizza could be created to accommodate this request.
+
+A possible pizza type could be called ""Fisherman's Delight"" or ""Seafood Pizza",1,There is no common type of pizza that includes FishTopping but not CheeseTopping.,1,"There is no standard pizza type that includes FishTopping but not CheeseTopping. However, a possible answer could be a 'Fish Pizza' or a 'Seafood Pizza', but it would depend on the specific topping combinations and the pizzeria",1,"There is no traditional pizza type that specifically includes FishTopping but not CheeseTopping. However, some modern or gourmet pizzas might offer fish as a topping without cheese, but this is not a standard or widely recognized pizza type.",1,"There is no type of pizza that typically includes FishTopping but not CheeseTopping. However, a hypothetical pizza could be created with this combination.",1,There are no pizzas that typically include FishTopping but not CheeseTopping.,1
+57,Which pizzas are classified as having spicy toppings only?,LOGIC,"There isn't a definitive list of pizzas with spicy toppings only, as it can vary by restaurant and region. However, some popular pizzas with spicy toppings include:
+
+- Buffalo Chicken Pizza (typically has buffalo sauce and chicken)
+- Spicy Italian Saus",1,"Some examples of pizzas classified as having spicy toppings only include:
+
+1. Ghost Pepper Pizza (with ghost pepper-infused sauce or toppings)
+2. Spicy Italian Sausage Pizza (with spicy Italian sausage and red pepper flakes)
+3. Jalape",1,"Some pizzas classified as having spicy toppings only include:
+
+- Ghost Pepper Pizza
+- Inferno Pizza
+- Spicy Hawaiian Pizza (with jalapenos or habaneros)
+- Devil's Pizza",1,"Some pizzas classified as having spicy toppings only include:
+
+- Ghost Pepper Pizza
+- Inferno Pizza
+- Spicy Hawaiian Pizza with jalapenos or ghost peppers
+- Buffalo Chicken Pizza",1,"Some pizzas classified as having spicy toppings only include:
+
+- Ghost Pepper Pizza
+- Spicy Hawaiian Pizza with Jalapeño
+- Inferno Pizza
+- Buffalo Chicken Pizza
+- Spicy Italian Sausage Pizza",1,"Some examples of pizzas classified as having spicy toppings only are:
+
+- Ghost Pepper Pizza
+- Spicy Hawaiian Pizza (with jalapenos or hot peppers instead of traditional ham)
+- Inferno Pizza
+- Buffalo Chicken Pizza
+- Spicy Italian S",1,"Some examples of pizzas classified as having spicy toppings only include:
+
+- Ghost Pepper Pizza
+- Spicy Italian Sausage Pizza
+- Jalapeño Popper Pizza
+- Habanero Pizza
+- Buffalo Chicken Pizza",1
+58,Is JalapenoTopping considered a HotTopping?,SUB,Yes.,1,Yes.,1,Yes.,1,Yes.,1,Yes.,1,Yes.,1,Yes.,1
+59,What distinguishes a CheeseTopping from a VegetableTopping in the ontology?,SUB,"A CheeseTopping is distinguished from a VegetableTopping by the type of ingredient used, with CheeseTopping being made from cheese and VegetableTopping being made from vegetables.",1,"In the ontology, a CheeseTopping is distinguished from a VegetableTopping by the type of ingredient: CheeseTopping contains a cheese as its primary ingredient, whereas VegetableTopping contains a vegetable as its primary ingredient.",1,"In the ontology, a CheeseTopping and a VegetableTopping are distinguished by their respective types, with CheeseTopping having a type of ""cheese"" and VegetableTopping having a type of ""vegetable"".",1,"In the ontology, a CheeseTopping is distinguished from a VegetableTopping by the ""hasIngredient"" property, where CheeseTopping has ""cheese"" as its ingredient, and VegetableTopping has a vegetable as its ingredient.",1,"In the ontology, a CheeseTopping is distinguished from a VegetableTopping by the type of ingredient used.",1,"In the ontology, a CheeseTopping is distinguished from a VegetableTopping by the type of ingredient it contains, specifically that CheeseTopping contains cheese, whereas VegetableTopping contains vegetables.",1,"In the ontology, a CheeseTopping is distinguished from a VegetableTopping by the 'hasIngredient' property, where CheeseTopping has 'cheese' as its ingredient, and VegetableTopping has a vegetable as its ingredient.",1
+60,What pizzas use both ThinAndCrispyBase and a spicy topping?,LOGIC,I don't have enough information to provide a specific answer.,1,"Some pizzas that use both a ThinAndCrispyBase and a spicy topping are:
+
+- Spicy Hawaiian: Thin and crispy crust topped with ham or Canadian bacon, pineapple, and spicy sauce.
+- Spicy Meat Lover's: Thin and crispy",1,I'm not aware of specific pizza combinations that use both ThinAndCrispyBase and a spicy topping.,1,"I'm not aware of a specific pizza that uses both ThinAndCrispyBase and a spicy topping by default. However, some popular pizzas that have a thin and crispy crust and spicy toppings are:
+
+- California Pizza Kitchen's Spicy Hawaiian Pizza",1,I'm not aware of any specific pizza that combines ThinAndCrispyBase with a spicy topping.,1,I'm not aware of specific pizzas that use both ThinAndCrispyBase and a spicy topping.,1,I'm not aware of any specific pizzas that use both ThinAndCrispyBase and a spicy topping.,1
