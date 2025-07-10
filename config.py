@@ -70,6 +70,8 @@ questions = {
 }
 
 
-
+# Load the JSON data
+with open("dataset/60qas.json", 'r', encoding='utf-8') as f:
+    larger_qas = json.load(f)
 
 
