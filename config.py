@@ -1,5 +1,6 @@
 from dotenv import find_dotenv, load_dotenv
 import os
+import json
 
 _ = load_dotenv(find_dotenv())
 
@@ -27,26 +28,27 @@ Refer to the following Pizza Ontology when responding to questions:
 
 instruction = "You are an advanced model specializing in question answering."
 
-prompt_list = {"standard": {"instruct": instruction, "prompt": standard_prompt},
+prompt_list = {
+               "standard": {"instruct": instruction, "prompt": standard_prompt},
                "domain": {"instruct": instruction, "prompt": domain_prompt}, 
-               "onto": {"instruct": instruction, "prompt":  standard_prompt}}
+               "onto": {"instruct": onto_instruction, "prompt":  standard_prompt}}
 
 datasets_path = {
     "rdf": "dataset/pizza.owl",
     "omn": "dataset/manchester.omn",
     "ofn": "dataset/owlfunctional.ofn",
-    "owx": "dataset/owlxml.owx",
+    # "owx": "dataset/owlxml.owx",
     "ttl": "dataset/turtle.ttl"
 }
 
 models_list = [
     # Small
-    "meta-llama/Llama-3.2-1B-Instruct",
-    "Qwen/Qwen2.5-0.5B-Instruct",
+     "meta-llama/Llama-3.2-1B-Instruct",
+     "Qwen/Qwen2.5-0.5B-Instruct",
     
-    # Medium
-    "meta-llama/Llama-3.1-8B-Instruct",
-    "Qwen/Qwen2.5-7B-Instruct",
+     # Medium
+     "meta-llama/Llama-3.1-8B-Instruct",
+     "Qwen/Qwen2.5-7B-Instruct",
     
     # Large
     "meta-llama/Llama-3.3-70B-Instruct",
@@ -73,5 +75,4 @@ questions = {
 # Load the JSON data
 with open("dataset/60qas.json", 'r', encoding='utf-8') as f:
     larger_qas = json.load(f)
-
 

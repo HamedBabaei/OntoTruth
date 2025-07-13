@@ -1,70 +1,41 @@
-question,standard-answer,standard-eval,domain-answer,domain-eval,rdf-onto-answer,rdf-onto-eval,omn-onto-answer,omn-onto-eval,ofn-onto-answer,ofn-onto-eval,owx-onto-answer,owx-onto-eval,ttl-onto-answer,ttl-onto-eval
+question,standard-answer,standard-eval,domain-answer,domain-eval,rdf-onto-answer,rdf-onto-eval,omn-onto-answer,omn-onto-eval,ofn-onto-answer,ofn-onto-eval,ttl-onto-answer,ttl-onto-eval
 What are the three main toppings of an American Pizza?,"The three main toppings of an American Pizza are:
 
-1. Mozzarella cheese
-2. Pepperoni
-3. Tomato sauce",1,"The three main toppings of an American Pizza are:
-
 1. Pepperoni
-2. Mozzarella cheese
-3. Tomatoes",1,"Pepperoni, mushrooms, and extra cheese.",1,"Pepperoni, mushrooms, and extra cheese.",1,"The three main toppings of an American Pizza are:
+2. Mozzarella Cheese
+3. Tomato sauce",1,"The three main toppings of an American pizza are:
 
 1. Pepperoni
 2. Mushrooms
-3. Extra cheese",1,"The three main toppings of an American Pizza are:
+3. Extra cheese",1,"MozzarellaTopping, PeperoniSausageTopping, and TomatoTopping.",1,"The three main toppings of an American Pizza are <pizza.owl#MozzarellaTopping>, <pizza.owl#PepperoniSausageTopping>, and <pizza.owl#TomatoTopping>.",1,"MozzarellaTopping, PeperoniSausageTopping, and TomatoTopping.",1,"AnchoviesTopping, CaperTopping, and MozzarellaTopping.",1
+What is the spiciness of a Pepperoni Topping Pizzas?,"The spiciness of a Pepperoni Topping Pizza can vary depending on the specific pizza and brand. However, pepperoni itself is typically mildly spicy due to its seasoning, but not extremely hot.",1,"The spiciness of a Pepperoni Topping Pizza varies depending on the type of pepperoni used and the individual's tolerance. 
 
-1. Pepperoni
-2. Mushrooms
-3. Extra cheese",1,"The three main toppings of an American pizza are:
-
-1. Pepperoni
-2. Mozzarella cheese
-3. Sausage",1
-What is the spiciness of a Pepperoni Topping Pizzas?,"The spiciness of a Pepperoni Topping Pizza is generally mild to medium, as the pepperoni is typically made from cured and smoked pork and beef, seasoned with paprika, garlic, and other spices, but not typically hot peppers.",1,"The spiciness of a Pepperoni Topping Pizza is generally mild to moderate. Pepperoni itself has a moderate level of spiciness due to the presence of paprika and other spices, but the overall heat level of a pizza with pepperoni",1,"Mild to moderate, as pepperoni is typically a mildly spicy Italian sausage.",1,"The spiciness of a Pepperoni Topping Pizza can vary depending on the brand and recipe, but generally, it's mild to moderate.",1,"The spiciness of a Pepperoni Topping Pizza can vary depending on the specific brand or recipe, but generally, it is mildly spicy.",1,"Mild to medium spiciness, as pepperoni is typically a mildly spicy cured meat.",1,"The spiciness of a Pepperoni Topping Pizza can vary depending on the specific recipe and brand, but generally, it is mild to moderate.",1
-Is a MargheritaPizza a VegetarianPizza?,Yes.,1,Yes.,1,Yes.,1,Yes.,1,Yes.,1,Yes.,1,Yes.,1
-What distinguishes Italian pizza toppings from American pizza toppings?,"Italian pizza toppings tend to be simpler and more focused on fresh ingredients, such as tomatoes, mozzarella, basil, and prosciutto. In contrast, American pizza toppings often feature a wider variety of ingredients, including meats like pepperoni and sausage,",1,"Italian pizza toppings tend to feature more simple, regional ingredients, such as prosciutto, arugula, and burrata. American pizza toppings often include a wider variety of meats, such as pepperoni, sausage, and bacon, as well",1,"Italian pizza toppings tend to be simpler and focus on fresh ingredients, while American pizza toppings are often more varied and abundant.",1,"Italian pizza toppings often feature ingredients like prosciutto, arugula, and burrata, which are less common in American pizza toppings.",1,"Italian pizza toppings tend to be simpler and more traditional, often featuring ingredients like fresh tomatoes, mozzarella cheese, basil, and prosciutto. In contrast, American pizza toppings are often more diverse and abundant, featuring a wide range of meats, vegetables",1,"Italian pizza toppings tend to be simpler and more regional, often featuring fresh ingredients such as prosciutto, arugula, and buffalo mozzarella. 
-
-In contrast, American pizza toppings are often more diverse and abundant, featuring a wide range of meats",1,"Italian pizza toppings tend to be simpler and more traditional, often featuring ingredients like fresh tomatoes, mozzarella cheese, basil, and prosciutto. In contrast, American pizza toppings are often more varied and loaded, featuring items like pepperoni, sausage,",1
-What is a hot and spicy herb commonly used as a pizza topping?,Red pepper or Red pepper flakes are commonly used as a pizza topping.,1,Red pepper flakes or red chili flakes are commonly used as a pizza topping to add heat and spiciness.,1,"Red pepper flakes or red chili pepper, but more commonly known as red pepper, or commonly known as red chili.",1,"Red pepper flakes or red pepper (specifically, the herb being referred to is likely ""red pepper"" or ""red pepper flakes"" which is made from the dried and crushed red pepper, commonly known as red chili pepper or red pepper or the fresh",1,"Red pepper or red chili flakes are common choices, but one popular hot and spicy herb used as a pizza topping is oregano's cousin, ""Calabrian chili pepper's cousin""  'Red pepper's cousin'  actually being  '",1,"Red pepper flakes or red chili pepper are common options, but the herb you might be thinking of is likely Oregano's close relative, 'Red Pepper's' close relative,  'Red pepper's' cousin,  or more specifically: 
-
-",1,"Red pepper or red chili flakes, but more commonly, it is red pepper's cousin, Red pepper's cousin is not the best answer, a more accurate answer would be Red pepper's cousin is not it, but rather, the more commonly used answer",1
-What is a mild and meaty pizza topping?,Pepperoni.,1,Ham.,1,Pepperoni.,1,Pepperoni.,1,Pepperoni.,1,Pepperoni.,1,Italian sausage.,1
-Which is a spicy vegetarian pizza?,Jalapeño Popper Pizza.,1,"Spicy vegetarian pizza options include the ""Spicy Veggie"" or ""Veggie Inferno"" pizzas.",1,Jalapeño Popper Pizza.,1,Jalapeño Popper Pizza.,1,"Jalapeno Popper Pizza (typically features jalapenos, cream cheese, and mozzarella) or a ""Spicy Veggie"" pizza that includes hot peppers like Anaheim, Poblano, or Habanero, along with vegetarian toppings",1,"Spicy vegetarian pizza options include:
-
-- Spicy Veggie pizza ( Domino's)
-- Spicy Italian pizza (California Pizza Kitchen)
-- Spicy Veggie pizza (Pizza Hut)
-- Spicy Roasted Veggie pizza (Pizza Express)",1,Jalapeño Popper Pizza.,1
+Typically, pepperoni is moderately spicy due to the presence of paprika and other spices. However, some pepper",1,Medium,1,Medium,1,Medium.,1,Medium.,1
+Is a MargheritaPizza a VegetarianPizza?,Yes.,1,Yes.,1,Yes.,1,Yes.,1,Yes.,1,Yes.,1
+What distinguishes Italian pizza toppings from American pizza toppings?,"Italian pizza toppings tend to be simpler and focus on fresh ingredients, while American pizza toppings are often more elaborate and feature a wide variety of meats, cheeses, and vegetables.",1,"Italian pizza toppings often feature ingredients like prosciutto, arugula, and burrata, which are less common in American pizza toppings. Additionally, Italian pizzas tend to focus on fresher, seasonal ingredients, while American pizzas may rely more on",1,"The distinction between Italian and American pizza toppings is based on the types of ingredients used, with Italian pizza toppings typically featuring ingredients such as mozzarella, tomato sauce, and various meats and vegetables that are commonly found in Italy, while American pizza toppings often include",1,"The country of origin. Italian pizza toppings are distinguished by having a country of origin value of Italy, whereas American pizza toppings are distinguished by having a country of origin value of America.",1,"The Italian pizza toppings are distinguished by the presence of ingredients such as anchovies, artichokes, capers, and olives, which are commonly used in Italian cuisine.",1,"The country of origin of the toppings. In the ontology, the Italian pizza toppings are distinguished by having a country of origin of ""Italy"", whereas the American pizza toppings do not have a specified country of origin.",1
+What is a hot and spicy herb commonly used as a pizza topping?,Red pepper or red pepper flakes are commonly used as a hot and spicy herb on pizzas.,1,Red pepper flakes or red chili flakes are commonly used as a pizza topping.,1,Red Pepper.,1,RosemaryTopping,1,GarlicTopping,1,PeperonataTopping.,1
+What is a mild and meaty pizza topping?,Pepperoni.,1,Ham.,1,MeatTopping.,1,<pizza.owl#PeperoniSausageTopping>,1,MeatTopping.,1,:Mild and :MeatTopping.,1
+Which is a spicy vegetarian pizza?,Jalapeño Popper Pizza or Spicy Veggie Pizza.,1,"The ""Quattro Formaggi con Peperoni Piccante"" or a ""Spicy Veggie Pizza"" with jalapeños or banana peppers are examples.",1,Frutti Di Mare,1,<pizza.owl#SpicyPizza>,1,<pizza.owl#Soho>,1,:SpicyPizzaEquivalent.,1
 What are the two types of tomato toppings used in pizza?,"The two types of tomato toppings used in pizza are:
 
-1. Fresh Tomato Slices
-2. Tomato Sauce",1,Crushed tomatoes and diced tomatoes are the two types of tomato toppings used in pizza.,1,Fresh tomatoes and tomato sauce.,1,Fresh tomatoes and tomato sauce.,1,"The two types of tomato toppings used in pizza are:
-
-1. Crushed tomatoes
-2. Fresh tomatoes",1,"The two types of tomato toppings used in pizza are:
-
 1. Fresh tomatoes
-2. Tomato sauce",1,"The two types of tomato toppings used in pizza are:
+2. Tomato sauce",1,Crushed tomatoes and tomato sauce are the two types of tomato toppings used in pizza.,1,SundriedTomatoTopping and TomatoTopping.,1,SlicedTomatoTopping and SundriedTomatoTopping.,1,SlicedTomatoTopping and TomatoTopping.,1,SlicedTomatoTopping and SundriedTomatoTopping.,1
+Which types of cheese pizzas are typically prepared with a maximum of one topping?,"Cheese pizzas with a maximum of one topping are typically prepared with a single topping such as:
 
-1. Fresh tomato sauce
-2. Canned crushed tomatoes",1
-Which types of cheese pizzas are typically prepared with a maximum of one topping?,"The types of cheese pizzas that are typically prepared with a maximum of one topping are the ""Cheese"" and ""Hawaiian"" pizzas.",1,"Cheese pizzas typically prepared with a maximum of one topping are:
+- Pepperoni
+- Sausage
+- Mushrooms
+- Extra Cheese",1,Quattro Formaggi pizza and Margherita pizza are examples of cheese pizzas that are typically prepared with a maximum of one topping.,1,CheesyPizza,1,<pizza.owl#Margherita>,1,Margherita,1,"None, all types of cheese pizzas are typically prepared with a minimum of one topping.",1
+"Which are incompatible toppings? (e.g., meat + vegetarian)",Meat and vegetarian.,1,"Some incompatible topping combinations include:
 
-1. Margherita pizza (fresh tomatoes)
-2. Quattro Formaggi pizza (four types of cheese)
-3. Capricciosa pizza (ham and/or bacon is optional",1,Simple cheese pizzas and Hawaiian cheese pizzas are typically prepared with a maximum of one topping.,1,"Pepperoni, Sausage, and Mushroom cheese pizzas are typically prepared with a maximum of one topping.",1,"Neapolitan-style cheese pizzas are typically prepared with a maximum of one topping, such as fresh tomatoes, or as a classic cheese pizza with no topping.",1,Simple cheese pizzas and Hawaiian pizzas.,1,"Simple cheese pizzas, Hawaiian cheese pizzas (with ham or Canadian bacon and pineapple), and meat lovers cheese pizzas (with pepperoni, sausage, bacon, and sometimes ham) are examples of cheese pizzas with a maximum of one topping.",1
-"Which are incompatible toppings? (e.g., meat + vegetarian)",Meat and vegetarian are generally incompatible.,1,"Some incompatible topping combinations are:
+- Meat (e.g., pepperoni, sausage) + Vegetarian (e.g., mushrooms, bell peppers)
+- Meat + Vegan (e.g., tofu, avocado)
+- Anchovies + Vegetarian or Vegan
+",1,MeatTopping and VegetarianTopping are incompatible.,1,"<pizza.owl#MeatTopping> and <pizza.owl#VegetarianTopping>, 
+<pizza.owl#FishTopping> and <pizza.owl#VegetarianTopping>, 
+<pizza.owl#MeatTopping>",1,"The following are incompatible toppings:
 
-1. Meat + Vegetarian
-2. Fish + Meat
-3. Eggs + Halal or Kosher diet (depending on the specific dietary restrictions)
-4. Anchovies + Vegetarian
-5. Blue cheese +",1,"Meat and vegetarian, as they are mutually exclusive dietary preferences.",1,Meat and vegetarian.,1,"Meat and vegetarian are typically incompatible. 
-Other examples include:
-- Meat and vegan
-- Fish and vegetarian
-- Fish and vegan
-- Dairy and lactose intolerant",1,Meat and vegetarian.,1,"Meat + vegetarian, 
-Fish + vegetarian, 
-Meat + vegan, 
-Fish + vegan.",1
+1. MeatTopping and VegetarianTopping
+2. NonVegetarianPizza and VegetarianPizza
+3. HotSpicedBeefTopping and VegetarianPizza
+4. MeatTopping and Veget",1,"MeatTopping, PeperoniSausageTopping, ChickenTopping, FishTopping, PrawnsTopping.",1
