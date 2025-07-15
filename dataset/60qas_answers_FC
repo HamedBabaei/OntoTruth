@@ -1,0 +1,78 @@
+Genera remarks:
+- tried to answer with the information contained in ontology only. The issue is when the question is about something that is not said within the ontology, what should be the answer? 
+- The categories are weird and debatable. In particular IND should probably not be here. I would suggest to divide the questions in two types: those that can be formulated in DL-queries and those that cannot, then try to see if changing the prompt to make the LLM formulate the DL query against the ontology provides better results for the questions that can be answered that way
+- I've ignored the two inconsistent classes
+
+| Q# | Question                                                                                         | Category | Answer | Comment |
+| -- | ------------------------------------------------------------------------------------------------ | -------- | ------ | ------- |
+| 1  | What are the common toppings of a Margherita Pizza?                                              | IND      | Mozzarella and tomato | |
+| 2  | Is a FourCheesePizza considered a VegetarianPizza?                                               | SUB      | Yes | Consider changing the name to "Quattro Formaggi" |
+| 3  | What toppings make a pizza classified as a HotAndSpicyPizza?                                     | SUB      | SpicyPizza | I found only "SpicyPizza" not "HotAndSpicyPizza" in the ontology (http://www.co-ode.org/ontologies/pizza/pizza.owl) |
+| 4  | Which pizzas contain both MushroomTopping and MozzarellaTopping?                                 | PROP     | Four Seasons, La Reine, Giardiniera, Mushroom | To answer the query one can use the DL query Pizza and (hasTopping some Mushroom) and (hasTopping some Mozzarella) |
+| 5  | Can a pizza have both HamTopping and AnchovyTopping without violating any disjoint restrictions? | DISJ     | Yes | (i) Should be "AnchoviesTopping" (ii) Again, one can ask the DL query Pizza and (hasTopping some Anchovies) and (hasTopping some Ham) |
+| 6  | What makes a pizza incompatible with a ThinAndCrispyBase?                                        | DISJ     | Having only Deep Pan Base as pizza base | Should probably be "LOGIC" |
+| 7  | What topping is classified as both spicy and vegetarian?                                         | LOGIC    | Cajun Spice, Hot Green Pepper, Jalapeno Pepper, Tobasco Pepper Sauce | DL query (DLQ): 'Vegetarian Topping'  and Spicy |
+| 8  | Which pizzas are defined to contain exactly two toppings?                                        | CARD     | Margherita, Quattro Formaggi | If question is interpreted in the sense "(hasTopping exactly 2 owl:Thing)", then no pizzas. If question is interpreted as "hasTopping exactly two types of things" than no DL query can be written but the answer is the one I supply |
+| 9  | Are there any pizzas that are both AmericanPizza and VegetarianPizza?                            | SUB      | No | (i) There is no "AmericanPizza" --> I consider it as a pizza from America. (ii) DLQ: (hasCountryOfOrigin value America) and 'Vegetarian Pizza'|
+| 10 | Which toppings are disjoint with CheeseTopping?                                                  | DISJ     | Fruit, Seafood, 'Herb Spice', 'Vegetable Topping', Sauce, Nut, Meat |  |
+| 11 | Is a QuattroFormaggiPizza classified as a CheesePizza?                                           | SUB      | Yes | (i) There is no "QuattroFormaggiPizza", nor a "CheesePizza" (ii) DLQ: 'Cheesy Pizza'|
+| 12 | What toppings are used in a SloppyGiuseppePizza?                                                 | IND      | Green Pepper, Hot Spiced Beef, Mozzarella, Onion, Tomato | Big limit of DLQs: cannot query classes used in restrictions |
+| 13 | What distinguishes a VegetarianPizza from a NonVegetarianPizza?                                  | SUB      | Non vegetarian pizza has as topping some seafood or some meat, vegetarian pizza does not | "LOGIC"? |
+| 14 | Which pizzas are defined to have a DeepPanBase?                                                  | PROP     | None |  |
+| 15 | What type of base is used in a SoHoPizza?                                                        | IND      | generic Pizza Base | (i) SoHo pizza, non SoHoPizza (ii) IND makes little sense|
+| 16 | Can a pizza have both PrawnTopping and ChickenTopping?                                           | DISJ     | Yes (although no named pizza does) | "Prawn[s]Topping" |
+| 17 | What is the minimum number of toppings on a SupremePizza?                                        | CARD     | There is no supreme pizza | There is no "supreme" pizza |
+| 18 | Is a VenezianaPizza suitable for vegetarians?                                                    | SUB      | Yes | DLQ: 'Vegetarian Pizza' |
+| 19 | What spicy meat topping is commonly found on American-style pizzas?                              | IND      | Peperoni Sausage | IND --> Logic, also Logic and statistic, since asks for "common" |
+| 20 | Which pizzas include OliveTopping as one of their ingredients?                                   | PROP     | Four Seasons, Ice Cream, La Reine, Capricciosa, Fiorentina, Giardiniera, Napoletana, Siciliana, Soho, Veneziana | DLQ: hasTopping some Olive |
+| 21 | Are there any pizzas defined to be both HotAndSpicy and Vegetarian?                              | SUB      | No | DLQ: Spicy and 'Vegetarian Pizza' |
+| 22 | What kind of topping is RocketTopping categorized as?                                            | SUB      | Vegetable Topping | DLQ (direct superclasses): Rocket|
+| 23 | Can a pizza be both a SeafoodPizza and a VegetarianPizza?                                        | DISJ     | No | (i) There is no "SeafoodPizza" --> pizza that has some seafood as topping (ii) DLQ (notice that Nothing is equivalent to): (hasTopping some Seafood) and 'Vegetarian Pizza'|
+| 24 | What are the common toppings on a NapolitanaPizza?                                               | IND      | Anchovies, Caper, Mozzarella, Olive, Tomato | NapolEtana |
+| 25 | What is the difference between a TomatoTopping and a SundriedTomatoTopping?                      | SUB      | Sundried Tomato is a subclass of Tomato | In this case common-sense knowledge gives an evidently better answer |
+| 26 | What toppings are considered disjoint from MeatTopping?                                          | DISJ     | Fruit, Seafood, Herb Spice, Vegetable Topping, Sauce, Nut, Cheese |  |
+| 27 | What class of pizza does an AmericanHotPizza belong to?                                          | SUB      | Cheesy Pizza, Interesting Pizza, Meaty Pizza, Spicy Pizza Equivalent, Spicy Pizza, NamedPizza | DLQ (direct superclasses): 'American Hot' |
+| 28 | Can a pizza have more than one type of cheese topping?                                           | CARD     | Yes |  |
+| 29 | Which pizzas are built using a ThinAndCrispyBase?                                                | PROP     | Real Italian Pizza, Napoletana, Veneziana | DLQ: hasBase some 'Thin And Crispy Base' |
+| 30 | Is there a pizza that includes both CaperTopping and AnchovyTopping?                             | PROP     | Four Seasons, Capricciosa, Napoletana | DLQ: (hasTopping some Caper) and (hasTopping some Anchovies) |
+| 31 | Which pizzas use GarlicTopping as an ingredient?                                                 | PROP     | Frutti Di Mare, Ice Cream, Pollo Ad Astra, CheeseyVegetableTopping, Fiorentina, Siciliana, Soho | DLQ: (hasTopping some Garlic) |
+| 32 | What toppings are only allowed on a VegetarianPizza?                                             | DISJ     | None | technically, there are no toppings that are forced to be used on vegetarian pizzas only. Of course, if one means "vegetarian pizzas can contain only certain toppings, which are those?", then the answer is "Cheese or Fruit or Herb Spice or Nut or Sauce or Vegetable Topping". Another possible interpretation is to find the set of toppings that are used in named vegetarian pizzas but not in named non-vegetarian pizzas, in the ontology |
+| 33 | Is ArtichokeTopping considered a vegetable topping?                                              | SUB      | Yes | DLQ: Artichoke |
+| 34 | Which pizzas contain more than three toppings?                                                   | CARD     | American Hot, Four Seasons, Frutti Di Mare, La Reine, Pollo Ad Astra, Prince Carlo, Sloppy Giuseppe, American, Cajun, Capricciosa, Caprina, Fiorentina, Giardiniera, Mushroom, Napoletana, Parmense, Rosa, Siciliana, Soho, Veneziana | DLQ: hasTopping min 3 owl:Thing |
+| 35 | What distinguishes a MeatTopping from a FishTopping?                                             | SUB      | Their subclasses and annotations, also seafood has mild spiciness | Of course, there is the ovious answer "one is with meat, the other with fish" |
+| 36 | Which topping would violate vegetarian restrictions if added to a MargheritaPizza?               | DISJ     | Any seafood or meat topping | One could list subclasses also |
+| 37 | What cheese toppings are used in a FourCheesePizza?                                              | IND      | The Four Cheeses topping | Of course, the meaningful and corect answer is mozzarella, gorgonzola, some soft cheese, and some hard cheese, depending on the region |
+| 38 | Which pizzas contain both OnionTopping and PepperTopping?                                        | PROP     | Pollo Ad Astra, Sloppy Giuseppe, Cajun | DLQ: (hasTopping some Onion) and (hasTopping some Pepper) |
+| 39 | Is there a pizza with both HamTopping and MushroomTopping?                                       | PROP     | Yes | (i) also they are 'Ice Cream', 'La Reine' (ii) DLQ: (hasTopping some Ham) and (hasTopping some Mushroom) |
+| 40 | Which toppings are used in pizzas classified as SeafoodPizza?                                    | SUB      | There is no "SeafoodPizza" but, of course, sea food topping| There is no "SeafoodPizza" but, of course, sea food topping |
+| 41 | Which pizza includes HotGreenPepperTopping?                                                      | IND      | American Hot | DLQ: (hasTopping some 'Hot Green Pepper') |
+| 42 | Is there a pizza that is both spicy and contains seafood toppings?                               | LOGIC    | No | DLQ: (hasTopping some Seafood) and Spicy |
+| 43 | What pizzas are incompatible with CheeseTopping?                                                 | DISJ     | Frutti di mare | DLQ: Pizza and (hasTopping only (not Cheese)) |
+| 44 | What are the ingredient constraints on a VegetarianHotPizza?                                     | LOGIC    | There is no "VegetarianHotPizza" | There is no "VegetarianHotPizza", but of course we are talking about a pizza with (a) some hot topping and (b) with only vegetarian toppings as toppings |
+| 45 | What pizza includes LeekTopping?                                                                 | IND      | Prince Carlo, Giardiniera | DLQ: (hasTopping some Leek) |
+| 46 | Which pizzas are defined using exactly one topping?                                              | CARD     | None | (i) DLQ: (hasTopping max 1 owl:Thing) and Pizza (ii) The DLQ is actually wrong, because the question refers to the types of topping not to the quantity of individual toppings on the pizza, whatever that means (could also be an issue at the conceptualization level of the ontology) |
+| 47 | What kinds of pizzas can have PineappleTopping?                                                  | PROP     | None | THere is no PineApple in the ontology |
+| 48 | Which toppings are used on pizzas with a DeepPanBase?                                            | PROP     | There are no DeepPanBase pizzas | There are no DeepPanBase pizzas |
+| 49 | Can a pizza be both ItalianPizza and AmericanPizza at the same time?                             | DISJ     | Yes | Yes because "hasCountryOfOrigin" is not declared as Functional, but of course, the answer is "no" and said property should be fucntional (or maybe not?) |
+| 50 | What is the cardinality restriction on toppings for a MargheritaPizza?                           | CARD     | A margerita can have only tomato and mozzeralle toppings and must have actually have these two. So it has both universal and existential restrictions on those two toppings. | Many ways to say this |
+| 51 | Are MozzarellaTopping and GoatCheeseTopping disjoint?                                            | DISJ     | Yes |  |
+| 52 | Which pizzas include SpicyBeefTopping?                                                           | PROP     | Sloppy Giuseppe | DLQ: (hasTopping some 'Hot Spiced Beef') and Pizza |
+| 53 | Which pizzas are defined with no meat toppings at all?                                           | LOGIC    | Vegetarian pizzas | Ambigous, could also be interpreted as "(hasTopping only (not Meat)) and Pizza" in which case the answer is Frutti Di Mare, Prince Carlo, Quattro Formaggi, Vegetarian Pizza, Vegetarian Pizza1, Vegetarian Pizza2, Cajun, Caprina, Fiorentina, Giardiniera, Margherita, Mushroom, Napoletana, Rosa, Soho, Veneziana,  |
+| 54 | Which toppings would be illegal to add to a classified VegetarianPizza?                          | DISJ     | Any meat or seafood topping | For consistency sake, answer should be similar to answer to 36 |
+| 55 | Are there any pizzas that include both TomatoTopping and LeekTopping?                            | PROP     | Yes | DLQ: (hasTopping some Leek) and (hasTopping some Tomato) --> Prince Carlo, Giardiniera|
+| 56 | What type of pizzas include FishTopping but not CheeseTopping?                                   | LOGIC    | Frutti Di Mare | (hasTopping some Seafood) and (hasTopping only (not Cheese)) |
+| 57 | Which pizzas are classified as having spicy toppings only?                                       | LOGIC    | None | DLQ: Pizza and (hasTopping only (hasSpiciness some (Medium or Hot))) |
+| 58 | Is JalapenoTopping considered a HotTopping?                                                      | SUB      | There is no "HotTopping" | There is no "HotTopping", but, of course, "yes" on the ground that "JalapenoTopping hasSpiciness some Hot" |
+| 59 | What distinguishes a CheeseTopping from a VegetableTopping in the ontology?                      | SUB      | They have different subclasses and annotations | Again, here common-sense knowledge can provide a much better answer |
+| 60 | What pizzas use both ThinAndCrispyBase and a spicy topping?                                      | LOGIC    | None | DLQ: 'Thin And Crispy Pizza' and Spicy |
+
+
+
+| Category Code | Reasoning Level                                | Description                                                   |
+| ------------- | ---------------------------------------------- | ------------------------------------------------------------- |
+| **IND**       | Individual-level fact                          | Uses asserted knowledge about named individuals               |
+| **SUB**       | Subclass/Type hierarchy                        | Uses `subClassOf` or instance type inference                  |
+| **PROP**      | Object/Data property usage                     | Uses `hasTopping`, `hasBase`, etc.                            |
+| **DISJ**      | Disjointness and inconsistency checking        | Uses `disjointWith`, illegal combinations                     |
+| **CARD**      | Cardinality restrictions                       | Uses OWL restrictions like `exactly`, `some`, `min`           |
+| **LOGIC**     | Logical/semantic composition (complex queries) | Involves inference across multiple dimensions or conjunctions |
