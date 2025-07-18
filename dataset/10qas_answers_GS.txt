@@ -1,0 +1,12 @@
+| Q# | Question                                                                                         |
+| -- | ------------------------------------------------------------------------------------------------ |
+| 1  | What are the three main toppings of an American Pizza?                                           |MozzarellaTopping, PeperoniSausageTopping, TomatoTopping. american pizza is defined as hasTopping only MozzarellaTopping or PeperoniSausageTopping or TomatoTopping)
+| 2  | What is the spiciness of a Pepperoni Topping Pizzas?                                             |Medium. PeperoniSausageTopping hasSpiciness some Medium
+| 3  | Is a MargheritaPizza a VegetarianPizza?                                     						|Yes. Margherita hasTopping only  (MozzarellaTopping or TomatoTopping), Vegetarian pizza has topping only vegetariantopping, Vegetarian topping is defined as cheesetopping or vegetable topping
+| 4  | What distinguishes Italian pizza toppings from American pizza toppings?                          |American pizzas are defined by spicy meat toppings like pepperoni and jalapeños, while Italian pizzas focus on milder
+| 5  | What is a hot and spicy herb commonly used as a pizza topping?									|Cajun. Cajun is a subclass of herbTopping and hasSpiciness Hot
+| 6  | What is a mild and meaty pizza topping?                                     						|ChickenTopping and HamTopping. subclassof Meat topping and both are mild
+| 7  | Which is a spicy vegetarian pizza?                                         						|JalapenoPepperTopping, HotGreenPepperTopping
+| 8  | What are the two types of tomato toppings used in pizza?                                       	|Dried and sliced
+| 9  | Which types of cheese pizzas are typically prepared with a maximum of one topping?               |Margherita
+| 10 | Which are incompatible toppings?                                       							|Meat and Vegetarian, Fish and Vegetarian
