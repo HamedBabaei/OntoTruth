@@ -1,0 +1,722 @@
+[
+    {
+        "Q#": 1,
+        "Question": "What are the common toppings of a Margherita Pizza?",
+        "Category": "IND",
+        "FC_Ans": "Mozzarella and tomato",
+        "GS_Ans": "MozzarellaTopping, TomatoTopping |MargheritaPizza has hasTopping some (MozzarellaTopping and TomatoTopping).",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators mention the same toppings for a Margherita Pizza: Mozzarella and Tomato. Annotator 2 uses the terminology from the ontology ('MozzarellaTopping', 'TomatoTopping') but these directly correlate with 'Mozzarella' and 'Tomato' from Annotator 1's answer.",
+            "answer": "Mozzarella and tomato"
+        }
+    },
+    {
+        "Q#": 2,
+        "Question": "Is a FourCheesePizza considered a VegetarianPizza?",
+        "Category": "SUB",
+        "FC_Ans": "Yes",
+        "GS_Ans": "Yes. FourCheesesTopping is a topping used in QuattroFormaggi, this query can go to logic(complex reasoning)",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators agree that a Four Cheese Pizza is considered a Vegetarian Pizza, implying that the toppings used in Four Cheese Pizza do not include any meat or fish, which aligns with the ontology description of a Vegetarian Pizza.",
+            "answer": "Yes"
+        }
+    },
+    {
+        "Q#": 3,
+        "Question": "What toppings make a pizza classified as a HotAndSpicyPizza?",
+        "Category": "SUB",
+        "FC_Ans": "SpicyPizza",
+        "GS_Ans": "HotGreenPepperTopping, HotSpicedBeefTopping, JalapenoPepperTopping, TobascoPepperSauce — anything with hasSpiciness value hot.",
+        "agreement": {
+            "agreement": "disagree",
+            "rationale": "Annotator 1 provided the class name 'SpicyPizza' as the answer, which refers to pizzas with spicy toppings in general. On the other hand, Annotator 2 provided specific toppings (HotGreenPepperTopping, HotSpicedBeefTopping, JalapenoPepperTopping, TobascoPepperSauce) that make a pizza hot and spicy, focusing on ingredients with the property hasSpiciness equal to hot. Therefore, the disagreement is in their interpretations: one described the class, while the other focused on specific qualifying ingredients.",
+            "answer": "SpicyPizza is a pizza that has at least one topping with a spiciness of hot, like HotGreenPepperTopping, HotSpicedBeefTopping, JalapenoPepperTopping, or TobascoPepperSauce."
+        }
+    },
+    {
+        "Q#": 4,
+        "Question": "Which pizzas contain both MushroomTopping and MozzarellaTopping?",
+        "Category": "PROP",
+        "FC_Ans": "Four Seasons, La Reine, Giardiniera, Mushroom",
+        "GS_Ans": "Mushroom, LaReine, Giardiniera, FourSeasons.",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators list the same set of pizzas: Four Seasons, La Reine, Giardiniera, Mushroom.",
+            "answer": "Four Seasons, La Reine, Giardiniera, Mushroom"
+        }
+    },
+    {
+        "Q#": 5,
+        "Question": "Can a pizza have both HamTopping and AnchovyTopping without violating any disjoint restrictions?",
+        "Category": "DISJ",
+        "FC_Ans": "Yes",
+        "GS_Ans": "No. Disjointness exists between MeatTopping and FishTopping",
+        "agreement": {
+            "agreement": "disagree",
+            "rationale": "Annotator 1 believes a pizza can have both HamTopping and AnchovyTopping, while Annotator 2 points out that there is a disjointness between MeatTopping (which includes Ham) and FishTopping (which includes Anchovy), suggesting that having both would violate disjoint restrictions.",
+            "answer": "No. There is a disjoint restriction between MeatTopping and FishTopping, which means a pizza cannot have both Ham (a type of MeatTopping) and Anchovy (a type of FishTopping) as toppings."
+        }
+    },
+    {
+        "Q#": 6,
+        "Question": "What makes a pizza incompatible with a ThinAndCrispyBase?",
+        "Category": "DISJ",
+        "FC_Ans": "Having only Deep Pan Base as pizza base",
+        "GS_Ans": "DeepPanBase is disjoint with ThinAndCrispyBase.",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators identified the same reason for incompatibility, namely the relationship between Deep Pan Base and Thin And Crispy Base. Annotator 1 focused on the instance of having a Deep Pan Base, while Annotator 2 mentioned that Deep Pan Base is disjoint with Thin And Crispy Base. Both statements essentially point to the same ontological constraint.",
+            "answer": "A pizza with a Deep Pan Base is incompatible with a Thin And Crispy Base because they are disjoint."
+        }
+    },
+    {
+        "Q#": 7,
+        "Question": "What topping is classified as both spicy and vegetarian?",
+        "Category": "LOGIC",
+        "FC_Ans": "Cajun Spice, Hot Green Pepper, Jalapeno Pepper, Tobasco Pepper Sauce",
+        "GS_Ans": "JalapenoPepperTopping, HotGreenPepperTopping, CajunSpiceTopping, TobascoPepperSauce",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators listed the same set of toppings, although the naming conventions differ slightly. Annotator 1 used more generic or common names while Annotator 2 used precise ontology class names from the RDF file. Despite the naming differences, they refer to the same toppings.",
+            "answer": "JalapenoPepperTopping, HotGreenPepperTopping, CajunSpiceTopping, TobascoPepperSauce"
+        }
+    },
+    {
+        "Q#": 8,
+        "Question": "Which pizzas are defined to contain exactly two toppings?",
+        "Category": "CARD",
+        "FC_Ans": "Margherita, Quattro Formaggi",
+        "GS_Ans": "MargheritaPizza has exactly two toppings: MozzarellaTopping, TomatoTopping. (Consider using hasTopping max 2)",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators identified 'Margherita' as a pizza with exactly two toppings. The mention of 'Quattro Formaggi' by Annotator 1 does not disagree with Annotator 2 as Annotator 2 focused specifically on 'Margherita.'",
+            "answer": "Margherita"
+        }
+    },
+    {
+        "Q#": 9,
+        "Question": "Are there any pizzas that are both AmericanPizza and VegetarianPizza?",
+        "Category": "SUB",
+        "FC_Ans": "No",
+        "GS_Ans": "No. Uses hasValue restriction on different individuals.",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators answered 'No', indicating that there are no pizzas that are both AmericanPizza and VegetarianPizza. Annotator 2 provides additional information by mentioning the use of the hasValue restriction, but both agree on the answer itself.",
+            "answer": "No"
+        }
+    },
+    {
+        "Q#": 10,
+        "Question": "Which toppings are disjoint with CheeseTopping?",
+        "Category": "DISJ",
+        "FC_Ans": "Fruit, Seafood, 'Herb Spice', 'Vegetable Topping', Sauce, Nut, Meat",
+        "GS_Ans": "VegetableTopping, MeatTopping, FishTopping, HerbSpiceTopping, FruitTopping, NutTopping, SauceToppin",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators identified the same categories of toppings that are disjoint with CheeseTopping, even though they used slightly different phrasings and one typographical error ('SauceToppin' instead of 'SauceTopping').",
+            "answer": "Vegetable Topping, Meat Topping, Fish Topping, Herb Spice Topping, Fruit Topping, Nut Topping, Sauce Topping"
+        }
+    },
+    {
+        "Q#": 11,
+        "Question": "Is a QuattroFormaggiPizza classified as a CheesePizza?",
+        "Category": "SUB",
+        "FC_Ans": "Yes",
+        "GS_Ans": "Yes. QuattroFormaggiPizza has topping FourCheesesTopping.",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators agree that a QuattroFormaggiPizza is classified as a CheesePizza, although Annotator 2 provides an additional detail that it has a FourCheesesTopping, which is a type of CheeseTopping.",
+            "answer": "Yes"
+        }
+    },
+    {
+        "Q#": 12,
+        "Question": "What toppings are used in a SloppyGiuseppePizza?",
+        "Category": "IND",
+        "FC_Ans": "Green Pepper, Hot Spiced Beef, Mozzarella, Onion, Tomato",
+        "GS_Ans": "HotSpicedBeefTopping, MozzarellaTopping, TomatoTopping, OnionTopping, GreenPepperTopping",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators provided the same toppings albeit with slight differences in naming conventions.",
+            "answer": "Green Pepper, Hot Spiced Beef, Mozzarella, Onion, Tomato"
+        }
+    },
+    {
+        "Q#": 13,
+        "Question": "What distinguishes a VegetarianPizza from a NonVegetarianPizza?",
+        "Category": "LOGIC",
+        "FC_Ans": "Non vegetarian pizza has as topping some seafood or some meat, vegetarian pizza does not",
+        "GS_Ans": "FishTopping and MeatTopping |Nonveg toppings are Fish Meat and vegetarian pizza doesnt have these",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators agree on the distinction between VegetarianPizza and NonVegetarianPizza. They both recognize that NonVegetarianPizza includes fish or meat toppings, while VegetarianPizza lacks these toppings.",
+            "answer": "NonVegetarianPizza has fish or meat toppings, while VegetarianPizza does not."
+        }
+    },
+    {
+        "Q#": 14,
+        "Question": "Which pizzas are defined to have a DeepPanBase?",
+        "Category": "PROP",
+        "FC_Ans": "None",
+        "GS_Ans": "WRONG",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both Annotator 1 and Annotator 2's responses indicate uncertainty or absence of a defined pizza with a DeepPanBase in the ontology. Annotator 1 answered 'None', suggesting no pizzas have a DeepPanBase, while Annotator 2 provided 'WRONG', implying a misinterpretation or error. Both annotations express a lack of a definitive pizza with a DeepPanBase, thus they are in agreement.",
+            "answer": "None"
+        }
+    },
+    {
+        "Q#": 15,
+        "Question": "What type of base is used in a SoHoPizza?",
+        "Category": "IND",
+        "FC_Ans": "generic Pizza Base",
+        "GS_Ans": "WRONG",
+        "agreement": {
+            "agreement": "disagree",
+            "rationale": "The disagreement arises because Annotator 1 provides a specific answer 'generic Pizza Base,' while Annotator 2 simply states 'WRONG' without further elaboration or an alternative answer.",
+            "answer": "generic Pizza Base"
+        }
+    },
+    {
+        "Q#": 16,
+        "Question": "Can a pizza have both PrawnTopping and ChickenTopping?",
+        "Category": "DISJ",
+        "FC_Ans": " Yes (although no named pizza does)",
+        "GS_Ans": "No. Disjointness between FishTopping (e.g., PrawnTopping) and MeatTopping (e.g., ChickenTopping).",
+        "agreement": {
+            "agreement": "disagree",
+            "rationale": "Annotator 1 states that a pizza can have both prawn and chicken toppings, noting that no specific named pizza does so. Annotator 2 cites disjointness between FishTopping (e.g., PrawnTopping) and MeatTopping (e.g., ChickenTopping) as reason for their position that a pizza cannot have both toppings. This indicates a disagreement based on different interpretations of the concept disjointness in the ontology.",
+            "answer": "No. Disjointness between FishTopping (e.g., PrawnTopping) and MeatTopping (e.g., ChickenTopping)."
+        }
+    },
+    {
+        "Q#": 17,
+        "Question": "What is the minimum number of toppings on a SupremePizza?",
+        "Category": "CARD",
+        "FC_Ans": "WRONG",
+        "GS_Ans": "WRONG",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators classified the answer as 'WRONG', indicating they agree on the classification, although they both may not provide a specific rationale given the added context is missing.",
+            "answer": "WRONG"
+        }
+    },
+    {
+        "Q#": 18,
+        "Question": "Is a VenezianaPizza suitable for vegetarians?",
+        "Category": "SUB",
+        "FC_Ans": "Yes",
+        "GS_Ans": "Yes",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both Annotator 1 and Annotator 2 agree that a VenezianaPizza is suitable for vegetarians based on the provided ontology. The ontology indicates that a VenezianaPizza contains toppings like Caper, Mozzarella, Olive, Onion, Pine Kernels, Sultana, and Tomato, all of which are vegetarian. Therefore, both annotators' answers align with the ontology, confirming their agreement.",
+            "answer": "Yes"
+        }
+    },
+    {
+        "Q#": 19,
+        "Question": "What spicy meat topping is commonly found on American-style pizzas?",
+        "Category": "LOGIC",
+        "FC_Ans": "Peperoni Sausage",
+        "GS_Ans": "PeperoniSausageTopping (spiciness: Medium)",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators identified Peperoni Sausage as the spicy meat topping. The second annotator used the full term 'PeperoniSausageTopping' and also included the spiciness level 'Medium', which is consistent with the ontology provided. The essential answer remains the same from both annotators, focusing on Peperoni Sausage as a common spicy meat topping.",
+            "answer": "Peperoni Sausage"
+        }
+    },
+    {
+        "Q#": 20,
+        "Question": "Which pizzas include OliveTopping as one of their ingredients?",
+        "Category": "PROP",
+        "FC_Ans": "Four Seasons, Ice Cream, La Reine, Capricciosa, Fiorentina, Giardiniera, Napoletana, Siciliana, Soho, Veneziana",
+        "GS_Ans": "Capricciosa, Fiorentina, FourSeasones, Giardiniera, Napoletana, Soho, Veneziana, Siciliana, LaReine.",
+        "agreement": {
+            "agreement": "disagree",
+            "rationale": "Both annotators have listed different entries: Annotator 1 included 'Ice Cream' and 'Four Seasons', whereas Annotator 2 included 'FourSeasones' and omitted 'Ice Cream'. Annotator 2 also listed 'LaReine' without space, which might be a typo. Overall, the disagreement stems from discrepancies in listing and potential typos.",
+            "answer": "Capricciosa, Fiorentina, Four Seasons, Giardiniera, Napoletana, Siciliana, Soho, Veneziana, La Reine"
+        }
+    },
+    {
+        "Q#": 21,
+        "Question": "Are there any pizzas defined to be both HotAndSpicy and Vegetarian?",
+        "Category": "SUB",
+        "FC_Ans": "No",
+        "GS_Ans": "None",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators provided answers that convey the same meaning: \"No\" and \"None\" both indicate the absence of pizzas that are defined as both HotAndSpicy and Vegetarian.",
+            "answer": "No"
+        }
+    },
+    {
+        "Q#": 22,
+        "Question": "What kind of topping is RocketTopping categorized as?",
+        "Category": "SUB",
+        "FC_Ans": "Vegetable Topping",
+        "GS_Ans": "VegetableTopping. RocketTopping subclassOf VegetableTopping (spiciness: Medium)",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators recognize RocketTopping as a type of VegetableTopping.",
+            "answer": "VegetableTopping"
+        }
+    },
+    {
+        "Q#": 23,
+        "Question": "Can a pizza be both a SeafoodPizza and a VegetarianPizza?",
+        "Category": "DISJ",
+        "FC_Ans": "No",
+        "GS_Ans": "No (FishTopping is disjoint with VegetarianPizza).",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators agree that a pizza cannot be both a SeafoodPizza and a VegetarianPizza. Annotator 2 provided an additional rationale indicating that FishTopping, a component of SeafoodPizza, is disjoint with VegetarianPizza. This indicates that any pizza containing a SeafoodPizza component cannot be a VegetarianPizza.",
+            "answer": "No"
+        }
+    },
+    {
+        "Q#": 24,
+        "Question": "What are the common toppings on a NapolitanaPizza?",
+        "Category": "IND",
+        "FC_Ans": "Anchovies, Caper, Mozzarella, Olive, Tomato",
+        "GS_Ans": "AnchoviesTopping, MozzarellaTopping, TomatoTopping, CaperTopping, OliveTopping",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators provided the identical set of toppings for NapolitanaPizza, differing only in labeling style (one using plain names and the other using ontology-class labels). This does not affect substantive agreement.",
+            "answer": "Anchovies, Caper, Mozzarella, Olive, Tomato"
+        }
+    },
+    {
+        "Q#": 25,
+        "Question": "What is the difference between a TomatoTopping and a SundriedTomatoTopping?",
+        "Category": "SUB",
+        "FC_Ans": "Sundried Tomato is a subclass of Tomato",
+        "GS_Ans": "SundriedTomatoTopping is a subclass of TomatoTopping.",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators correctly identify the hierarchical relationship in the ontology where SundriedTomatoTopping is explicitly defined as a subclass of TomatoTopping.",
+            "answer": "SundriedTomatoTopping is a subclass of TomatoTopping."
+        }
+    },
+    {
+        "Q#": 26,
+        "Question": "What toppings are considered disjoint from MeatTopping?",
+        "Category": "DISJ",
+        "FC_Ans": "Fruit, Seafood, Herb Spice, Vegetable Topping, Sauce, Nut, Cheese",
+        "GS_Ans": "VegetableTopping, CheeseTopping, FishTopping, HerbSpiceTopping, FruitTopping, NutTopping, SauceTopping",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators cite the same disjoint classes from MeatTopping albeit in different orders or slightly different terminology. Annotator 1 uses shorthand or more general terms, whereas Annotator 2 uses full ontology class names. However, they ultimately refer to the same classes. The classes they both mention are VegetableTopping, CheeseTopping, FishTopping, HerbSpiceTopping, FruitTopping, NutTopping, and SauceTopping.",
+            "answer": "VegetableTopping, CheeseTopping, FishTopping, HerbSpiceTopping, FruitTopping, NutTopping, SauceTopping"
+        }
+    },
+    {
+        "Q#": 27,
+        "Question": "What class of pizza does an AmericanHotPizza belong to?",
+        "Category": "SUB",
+        "FC_Ans": "Cheesy Pizza, Interesting Pizza, Meaty Pizza, Spicy Pizza Equivalent, Spicy Pizza, NamedPizza",
+        "GS_Ans": "NamedPizza; also subclass of CheesyPizza, InterestingPizza, MeatyPizza, SpicyPizzaEquivalent",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators list the same subclasses, namely NamedPizza, Cheesy Pizza, Interesting Pizza, Meaty Pizza, Spicy Pizza Equivalent, and Spicy Pizza. Annotator 2 uses a different wording (e.g., 'subclass of') but the classes mentioned are the same, signifying agreement.",
+            "answer": "NamedPizza, Cheesy Pizza, Interesting Pizza, Meaty Pizza, Spicy Pizza Equivalent, Spicy Pizza"
+        }
+    },
+    {
+        "Q#": 28,
+        "Question": "Can a pizza have more than one type of cheese topping?",
+        "Category": "CARD",
+        "FC_Ans": "Yes",
+        "GS_Ans": "Yes (e.g., QuattroFormaggi uses FourCheesesTopping).",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators agree that a pizza can have more than one type of cheese topping. The second annotator provides a specific example, QuattroFormaggi, which includes a FourCheesesTopping. This example is consistent with the ontology which indicates that multiple cheese toppings are possible.",
+            "answer": "Yes, a pizza can have more than one type of cheese topping."
+        }
+    },
+    {
+        "Q#": 29,
+        "Question": "Which pizzas are built using a ThinAndCrispyBase?",
+        "Category": "PROP",
+        "FC_Ans": "Real Italian Pizza, Napoletana, Veneziana",
+        "GS_Ans": "RealItalianPizza, Napoletana, Veneziana",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators provided the same set of pizzas but used slightly different formatting in naming the pizzas. Annotator 1 used spaces between words in 'Real Italian Pizza', while Annotator 2 used no spaces ('RealItalianPizza'). Both agreed on the names Napoletana and Veneziana. Therefore, the answers are considered equivalent.",
+            "answer": "Real Italian Pizza, Napoletana, Veneziana"
+        }
+    },
+    {
+        "Q#": 30,
+        "Question": "Is there a pizza that includes both CaperTopping and AnchovyTopping?",
+        "Category": "PROP",
+        "FC_Ans": "Four Seasons, Capricciosa, Napoletana",
+        "GS_Ans": "Yes (e.g., Capricciosa, FourSeasons).",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators identified similar pizzas that include both CaperTopping and AnchovyTopping, particularly mentioning Capricciosa and Four Seasons. Annotator 1 also lists Napoletana, which contains these toppings. Annotator 2 implicitly agrees by providing a yes-no answer with examples of pizzas. Their findings are complementary rather than conflicting.",
+            "answer": "Yes (e.g., Capricciosa, Four Seasons, Napoletana)."
+        }
+    },
+    {
+        "Q#": 31,
+        "Question": "Which pizzas use GarlicTopping as an ingredient?",
+        "Category": "PROP",
+        "FC_Ans": "Frutti Di Mare, Ice Cream, Pollo Ad Astra, CheeseyVegetableTopping, Fiorentina, Siciliana, Soho",
+        "GS_Ans": "Fiorentina, FruttiDiMare, PolloAdAstra, Soho, Siciliana",
+        "agreement": {
+            "agreement": "disagree",
+            "rationale": "Annotator 1 includes 'Ice Cream' and 'CheeseyVegetableTopping' which are not pizzas, whereas Annotator 2 only lists pizzas. Annotator 2 also uses CamelCase naming consistent with the ontology XML for the entities, while Annotator 1 uses inconsistent naming (spaces and capitalization).",
+            "answer": "Fiorentina, FruttiDiMare, PolloAdAstra, Siciliana, Soho"
+        }
+    },
+    {
+        "Q#": 32,
+        "Question": "What toppings are only allowed on a VegetarianPizza?",
+        "Category": "DISJ",
+        "FC_Ans": "None",
+        "GS_Ans": "None",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators provided the answer 'None', indicating their understanding that there are no toppings only allowed on a VegetarianPizza according to the ontology.",
+            "answer": "None"
+        }
+    },
+    {
+        "Q#": 33,
+        "Question": "Is ArtichokeTopping considered a vegetable topping?",
+        "Category": "SUB",
+        "FC_Ans": "Yes",
+        "GS_Ans": "Yes (subclass of VegetableTopping).",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators agree that ArtichokeTopping is considered a vegetable topping. The ontology explicitly states that ArtichokeTopping is a subclass of VegetableTopping, confirming their answers.",
+            "answer": "Yes"
+        }
+    },
+    {
+        "Q#": 34,
+        "Question": "Which pizzas contain more than three toppings?",
+        "Category": "CARD",
+        "FC_Ans": "American Hot, Four Seasons, Frutti Di Mare, La Reine, Pollo Ad Astra, Prince Carlo, Sloppy Giuseppe, American, Cajun, Capricciosa, Caprina, Fiorentina, Giardiniera, Mushroom, Napoletana, Parmense, Rosa, Siciliana, Soho, Veneziana |",
+        "GS_Ans": "SloppyGiuseppe, Parmense,Veneziana,VegetarianPizzaEquivalent, Soho, AmericanHot,PolloAdAstra,PrinceCarlo, Siciliana, Cajun, Capricciosa, Caprina, Napoletana,Fiorentina, FourSeasons, Giardiniera, LaReine,",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators agree that the pizzas listed, such as American Hot, Four Seasons, Pollo Ad Astra, and others, contain more than three toppings. Though there are some differences in naming conventions and exact pizza variants, the core content related to the number of toppings is consistent across both annotations.",
+            "answer": "American Hot, Four Seasons, Frutti Di Mare, La Reine, Pollo Ad Astra, Prince Carlo, Sloppy Giuseppe, American, Cajun, Capricciosa, Caprina, Fiorentina, Giardiniera, Mushroom, Napoletana, Parmense, Rosa, Siciliana, Soho, Veneziana"
+        }
+    },
+    {
+        "Q#": 35,
+        "Question": "What distinguishes a MeatTopping from a FishTopping?",
+        "Category": "SUB",
+        "FC_Ans": "one is with meat, the other with fish",
+        "GS_Ans": "Spiciness. MeatTopping and FishTopping are disjoint.",
+        "agreement": {
+            "agreement": "disagree",
+            "rationale": "Annotator 1 differentiates MeatTopping and FishTopping based on the type of primary ingredient used: one is meat, the other is fish. Annotator 2 notes the disjointness in terms of semantic categories and mentions spiciness, which is not an explicit defining factor for FishTopping. This indicates a disagreement based on varying interpretations of the ontology's properties.",
+            "answer": "MeatTopping is a subclass of PizzaTopping that includes meat items, while FishTopping is a subclass of PizzaTopping that includes fish items. They are disjoint classes, meaning no topping can be both a MeatTopping and a FishTopping."
+        }
+    },
+    {
+        "Q#": 36,
+        "Question": "Which topping would violate vegetarian restrictions if added to a MargheritaPizza?",
+        "Category": "DISJ",
+        "FC_Ans": "Any seafood or meat topping",
+        "GS_Ans": "Any MeatTopping  or FishTopping.",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "The two annotators agree on the kinds of toppings that would violate vegetarian restrictions on a Margherita Pizza. Annotator 1 states 'Any seafood or meat topping' while Annotator 2 specifies 'Any MeatTopping or FishTopping.' Since seafood toppings are included under FishTopping according to the ontology, both annotators essentially provide the same answer using different phrasings, covering both meat and fish categories.",
+            "answer": "Any MeatTopping or FishTopping."
+        }
+    },
+    {
+        "Q#": 37,
+        "Question": "What cheese toppings are used in a FourCheesePizza?",
+        "Category": "IND",
+        "FC_Ans": "The Four Cheeses topping",
+        "GS_Ans": "FourCheesesTopping",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators mention the same topping ('Four Cheeses topping' and 'FourCheesesTopping') which refers to the FourCheesesTopping class from the ontology, indicating agreement on the cheese topping used for FourCheesePizza.",
+            "answer": "FourCheesesTopping"
+        }
+    },
+    {
+        "Q#": 38,
+        "Question": "Which pizzas contain both OnionTopping and PepperTopping?",
+        "Category": "PROP",
+        "FC_Ans": "Pollo Ad Astra, Sloppy Giuseppe, Cajun",
+        "GS_Ans": "PolloAdAstra, SloppyGiuseppe, Cajun,",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators identified the same pizzas: Pollo Ad Astra, Sloppy Giuseppe, and Cajun as containing OnionTopping and PepperTopping. The only difference is the formatting with spaces, but the content is identical.",
+            "answer": "Pollo Ad Astra, Sloppy Giuseppe, Cajun"
+        }
+    },
+    {
+        "Q#": 39,
+        "Question": "Is there a pizza with both HamTopping and MushroomTopping?",
+        "Category": "PROP",
+        "FC_Ans": "Yes",
+        "GS_Ans": "Yes (LaReine).",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators agree that there is a pizza with both HamTopping and MushroomTopping. Annotator 1 responds with a general 'Yes,' while Annotator 2 specifies a particular instance, 'LaReine,' which has both toppings as per the ontology.",
+            "answer": "LaReine"
+        }
+    },
+    {
+        "Q#": 40,
+        "Question": "Which toppings are used in pizzas classified as SeafoodPizza?",
+        "Category": "SUB",
+        "FC_Ans": "sea food topping",
+        "GS_Ans": "toppings may include FishTopping (AnchoviesTopping, PrawnTopping)",
+        "agreement": {
+            "agreement": "disagree",
+            "rationale": "The disagreement arises because Annotator 1 generalized the answer as 'sea food topping', which is a category that may include various specific seafood toppings. Annotator 2 provided a more detailed answer, listing specific toppings for SeafoodPizza, such as FishTopping and its subclasses AnchoviesTopping and PrawnsTopping.",
+            "answer": "Toppings may include FishTopping such as AnchoviesTopping and PrawnsTopping."
+        }
+    },
+    {
+        "Q#": 41,
+        "Question": "Which pizza includes HotGreenPepperTopping?",
+        "Category": "IND",
+        "FC_Ans": "American Hot",
+        "GS_Ans": "AmericanHot",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators provided the same answer, 'American Hot.' They are referring to the pizza in the ontology that includes 'HotGreenPepperTopping' as one of its toppings. The difference in spacing between the words does not change the meaning of the answer.",
+            "answer": "American Hot"
+        }
+    },
+    {
+        "Q#": 42,
+        "Question": "Is there a pizza that is both spicy and contains seafood toppings?",
+        "Category": "LOGIC",
+        "FC_Ans": "No",
+        "GS_Ans": "No. Pizzas like AmericanHotPizza, CajunPizza are spicy but meat-based.",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators agree that there is no pizza that is both spicy and contains seafood toppings. Annotator 2 provides additional context by mentioning pizzas that are spicy but meat-based.",
+            "answer": "No"
+        }
+    },
+    {
+        "Q#": 43,
+        "Question": "What pizzas are incompatible with CheeseTopping?",
+        "Category": "DISJ",
+        "FC_Ans": "Frutti di mare",
+        "GS_Ans": "FruttiDiMare",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators provided the same answer but with a slight formatting difference, where the first annotator used lowercase and the second annotator used camel case. However, they refer to the same ontology class: FruttiDiMare.",
+            "answer": "FruttiDiMare"
+        }
+    },
+    {
+        "Q#": 44,
+        "Question": "What are the ingredient constraints on a VegetarianHotPizza?",
+        "Category": "LOGIC",
+        "FC_Ans": "WRONG",
+        "GS_Ans": "WRONG",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators identified the answer as WRONG based on the given ontology.",
+            "answer": "WRONG"
+        }
+    },
+    {
+        "Q#": 45,
+        "Question": "What pizza includes LeekTopping?",
+        "Category": "IND",
+        "FC_Ans": "Prince Carlo, Giardiniera",
+        "GS_Ans": "PrinceCarlo, Giardiniera",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "The only difference between the annotators' answers is the formatting of 'Prince Carlo' versus 'PrinceCarlo'. Both annotations refer to the same item in the ontology ('PrinceCarlo') hence they are semantically equivalent. The answer 'Giardiniera' matches exactly in both annotations.",
+            "answer": "PrinceCarlo, Giardiniera"
+        }
+    },
+    {
+        "Q#": 46,
+        "Question": "Which pizzas are defined using exactly one topping?",
+        "Category": "CARD",
+        "FC_Ans": "None",
+        "GS_Ans": "None. All have at least two toppings. MargheritaPizza sometimes has only one.",
+        "agreement": {
+            "agreement": "disagree",
+            "rationale": "Annotator 1 stated 'None' while Annotator 2 mentioned 'None' but added the information that 'all have at least two toppings' and mentioned 'MargheritaPizza sometimes has only one.' This indicates a difference in the interpretation of the ontology.",
+            "answer": "None"
+        }
+    },
+    {
+        "Q#": 47,
+        "Question": "What kinds of pizzas can have PineappleTopping?",
+        "Category": "PROP",
+        "FC_Ans": "WRONG",
+        "GS_Ans": "WRONG",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators agree that the ontology does not provide an explicit class of pizzas categorized as suitable for PineappleTopping.",
+            "answer": "There is no specific type of pizza that is identified to have PineappleTopping based on the given ontology."
+        }
+    },
+    {
+        "Q#": 48,
+        "Question": "Which toppings are used on pizzas with a DeepPanBase?",
+        "Category": "PROP",
+        "FC_Ans": "WRONG",
+        "GS_Ans": "WRONG",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators agree that the provided ontology does not specify which toppings are used specifically on pizzas with a 'DeepPanBase'.",
+            "answer": "WRONG"
+        }
+    },
+    {
+        "Q#": 49,
+        "Question": "Can a pizza be both ItalianPizza and AmericanPizza at the same time?",
+        "Category": "DISJ",
+        "FC_Ans": "Yes",
+        "GS_Ans": "No. ItalianPizza and AmericanPizza have hasCountryOfOrigin values {Italy} and {America}, which are distinct individuals.",
+        "agreement": {
+            "agreement": "disagree",
+            "rationale": "Annotator 1 answered 'Yes,' suggesting a pizza can be both ItalianPizza and AmericanPizza simultaneously without providing a rationale. Annotator 2 provided a rationale stating 'No,' explaining that ItalianPizza and AmericanPizza have 'hasCountryOfOrigin' values '{Italy}' and '{America}', respectively, which are distinct individuals.",
+            "answer": "No, a pizza cannot be both ItalianPizza and AmericanPizza at the same time because they have distinct 'hasCountryOfOrigin' values, '{Italy}' and '{America}', respectively."
+        }
+    },
+    {
+        "Q#": 50,
+        "Question": "What is the cardinality restriction on toppings for a MargheritaPizza?",
+        "Category": "CARD",
+        "FC_Ans": "WRONG",
+        "GS_Ans": "Max 2 Toppings(MozzarellaTopping + TomatoTopping).",
+        "agreement": {
+            "agreement": "disagree",
+            "rationale": "Annotator 1 states 'WRONG', indicating no informative content, while Annotator 2 provides a specific cardinality restriction of 'Max 2 Toppings(MozzarellaTopping + TomatoTopping)'. Annotator 1's response lacks any relation to cardinality restriction, leading to a disagreement based on completeness and accuracy of information.",
+            "answer": "Max 2 Toppings(MozzarellaTopping + TomatoTopping)"
+        }
+    },
+    {
+        "Q#": 51,
+        "Question": "Are MozzarellaTopping and GoatCheeseTopping disjoint?",
+        "Category": "DISJ",
+        "FC_Ans": "Yes",
+        "GS_Ans": "Yes (explicitly disjoint).",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators agree that MozzarellaTopping and GoatCheeseTopping are disjoint, and Annotator 2 notes that this is explicit in the ontology.",
+            "answer": "Yes"
+        }
+    },
+    {
+        "Q#": 52,
+        "Question": "Which pizzas include SpicyBeefTopping?",
+        "Category": "PROP",
+        "FC_Ans": "Sloppy Giuseppe",
+        "GS_Ans": "SloppyGiuseppe (HotSpicedBeefTopping).",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators identify 'Sloppy Giuseppe' as the pizza with a spicy beef topping. Annotator 2 simply adds detail by specifying the exact topping ('HotSpicedBeefTopping'). Despite the difference in detail, the fundamental answer aligns.",
+            "answer": "Sloppy Giuseppe"
+        }
+    },
+    {
+        "Q#": 53,
+        "Question": "Which pizzas are defined with no meat toppings at all?",
+        "Category": "LOGIC",
+        "FC_Ans": "Vegetarian pizzas",
+        "GS_Ans": "VegetarianPizza (e.g., Margherita, QuattroFormaggi).",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators provided similar responses, identifying vegetarian pizzas as those defined with no meat toppings. Annotator 1 used a more generic term (‘Vegetarian pizzas’), while Annotator 2 provided a specific class name and examples (‘VegetarianPizza’, e.g., Margherita, QuattroFormaggi). Nonetheless, both responses indicate vegetarian pizzas, hence there is agreement.",
+            "answer": "Vegetarian pizzas."
+        }
+    },
+    {
+        "Q#": 54,
+        "Question": "Which toppings would be illegal to add to a classified VegetarianPizza?",
+        "Category": "DISJ",
+        "FC_Ans": "Any meat or seafood topping",
+        "GS_Ans": "MeatTopping (e.g., HamTopping), FishTopping (e.g., AnchoviesTopping).",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators have identified that toppings from the MeatTopping and FishTopping categories are illegal on a classified VegetarianPizza. Annotator 1 gives a broader category description, while Annotator 2 provides specific examples within those categories, aligning their interpretations.",
+            "answer": "MeatTopping and FishTopping are illegal toppings for VegetarianPizza."
+        }
+    },
+    {
+        "Q#": 55,
+        "Question": "Are there any pizzas that include both TomatoTopping and LeekTopping?",
+        "Category": "PROP",
+        "FC_Ans": "Yes",
+        "GS_Ans": "Giardiniera, PrinceCarlo.",
+        "agreement": {
+            "agreement": "disagree",
+            "rationale": "Annotator 1 provides a general 'Yes', implying there are pizzas with TomatoTopping and LeekTopping but does not specify any pizza. Annotator 2 specifies two pizzas, 'Giardiniera' and 'Prince Carlo', which include both toppings. The disagreement emerges from one providing a general affirmative response while the other provides specific examples.",
+            "answer": "Giardiniera, PrinceCarlo."
+        }
+    },
+    {
+        "Q#": 56,
+        "Question": "What type of pizzas include FishTopping but not CheeseTopping?",
+        "Category": "LOGIC",
+        "FC_Ans": "Frutti Di Mare",
+        "GS_Ans": "FruttiDiMare (as it explicitly doesnt mention any cheesetopping).",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators identified the same pizza type, 'Frutti Di Mare', as having fish toppings without any cheese toppings. The answers only differ in the format but refer to the same pizza, ensuring agreement.",
+            "answer": "Frutti Di Mare"
+        }
+    },
+    {
+        "Q#": 57,
+        "Question": "Which pizzas are classified as having spicy toppings only?",
+        "Category": "LOGIC",
+        "FC_Ans": "None",
+        "GS_Ans": "None (all have mild/medium, other toppings too).",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators determine that no pizza is classified as having spicy toppings only, indicating agreement in interpreting the available ontology information.",
+            "answer": "None"
+        }
+    },
+    {
+        "Q#": 58,
+        "Question": "Is JalapenoTopping considered a HotTopping?",
+        "Category": "SUB",
+        "FC_Ans": "WRONG",
+        "GS_Ans": "WRONG",
+        "agreement": {
+            "agreement": "agree",
+            "rationale": "Both annotators agree that JalapenoTopping is not considered a HotTopping. However, their agreement is evident, and we can note that 'WRONG' is the consistent response provided, indicating no variation in their interpretations regarding JalapenoTopping and HotTopping.",
+            "answer": "No"
+        }
+    },
+    {
+        "Q#": 59,
+        "Question": "What distinguishes a CheeseTopping from a VegetableTopping in the ontology?",
+        "Category": "SUB",
+        "FC_Ans": "None",
+        "GS_Ans": "Disjoint classes . Different subclasses",
+        "agreement": {
+            "agreement": "disagree",
+            "rationale": "Annotator 1 did not provide an answer, whereas Annotator 2 mentioned that CheeseTopping and VegetableTopping are disjoint classes with different subclasses, which is an interpretation based on the ontology.",
+            "answer": "CheeseTopping and VegetableTopping are disjoint classes with different subclasses in the ontology."
+        }
+    },
+    {
+        "Q#": 60,
+        "Question": "What pizzas use both ThinAndCrispyBase and a spicy topping?",
+        "Category": "LOGIC",
+        "FC_Ans": "None",
+        "GS_Ans": "RealItalianPizza is a pizza with italian origin, veneziana is a RealitalianPizza and has Onion topping which is medium spicy.",
+        "agreement": {
+            "agreement": "disagree",
+            "rationale": "There is a disagreement between the two annotators regarding the answer. Annotator 1 identified that there are no pizzas that match both criteria of having a ThinAndCrispyBase and a spicy topping (spicy must be Hot spiciness). Annotator 2 provided an answer involving RealItalianPizza and Veneziana, but it incorrectly interprets spiciness levels (medium in this case) as spicy, which does not satisfy the criteria for 'spicy' as 'Hot' as per ontology.",
+            "answer": "None"
+        }
+    }
+]

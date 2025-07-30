@@ -1,0 +1,397 @@
+id,question,category,standard-answer,standard-eval,domain-answer,domain-eval,rdf-onto-answer,rdf-onto-eval,omn-onto-answer,omn-onto-eval,ofn-onto-answer,ofn-onto-eval,ttl-onto-answer,ttl-onto-eval
+1,What are the common toppings of a Margherita Pizza?,IND,"Tomato sauce, mozzarella cheese, and fresh basil.",0.7038959310385522,"Tomato sauce, mozzarella cheese, and fresh basil.",0.7038076550837311,Tomato and Mozzarella.,0.8607058636890625,"A Margherita Pizza has the following common toppings: MuzzarellaTopping,, TomatoTopping.",0.5178727128790197,"A Margherita Pizza has the following toppings: 
+1. AnchoviesTopping 
+2. Artichoke Topping 
+3. Capricciosa 
+4. Caper Topping 
+5. HotSpiced Beef Topping 
+",0.4536937368430517,The common toppings of a Margherita Pizza are Moxzarella and Tomatoes.,0.6072553584654693
+2,Is a FourCheesePizza considered a VegetarianPizza?,SUB,Yes.,0.6235899225433739,Yes.,0.6245930741620191,"No, a FourCheesePizza is not considered a VegetarianPizza because it has cheese topping.",0.11060001210468764,"No, FourCheesePizza is not considered a VegetarianPizza.",0.12545420121357975,"A FourCheeses Pizza is a type of pizza that is considered to be a Vegetarian Pizza. This is because it has at least four toppings from FourCheeses Topping and it does not have fish topping. 
+
+# Class: <pizza.owl",0.12030590870501695,"No, a FourCheesePizza is not considered a VegetarianPizza. According to the Pizza Ontology, a FourCheesePizza is a type of CheeseyPizza, which is a subclass of Pizza, and it has FourCheesesT",0.1547592116415653
+3,What toppings make a pizza classified as a HotAndSpicyPizza?,SUB,"Jalapeños, banana peppers, and hot sauce.",0.4658919185283175,"Jalapeños, pepperoni, and hot sausage.",0.5486895424857017,HotAndSpicyPizza is not defined in the provided Pizza Ontology.,0.5872605429220774,A pizza is classified as a HotAndSpicyPizza if it has at least one topping that is both a PizzaTopping and has spiciness hot.,0.8151260972705259,"A Hot and Spicy Pizza is a pizza that has at least one topping that is both a SpicyTopping and has spiciness hot. 
+
+# Class: <pizza.owl#HotAndSpicyPizza > 
+A pizza that has at",0.8041599801824892,"According to the provided Pizza Ontology, a pizza is classified as a HotAndSpicyPizza if it has at least one topping that is both a PizzaTopping and has spiciness Hot.",0.7775210690077854
+4,Which pizzas contain both MushroomTopping and MozzarellaTopping?,PROP,Pizzas 1 and 3.,0.36873556360817517,"Pizzas that contain both MushroomTopping and MozzarellaTopping are: 
+- Quattro Formaggi with added mushrooms
+- Funghi 
+- Mushroom and Mozzarella Deluxe",0.5266499688628671,Mushroom and Quattro Formaggi.,0.5699700010820921,"The pizzas that contain both MushroomTopping and MozzarellaTopping are:
+- American
+- AmericanHot
+- ArtichokeTopping
+- AsparagusTopping
+- Cajun
+- CaperTopping
+- Capricciosa",0.4507483680363971,"# Question: Which pizzas contain both Mushroom Topping and Mozzarella Topping > 
+
+# Individual: <pizza.owl#American> 
+# Individual: <pizza.owl#AmericanHot> 
+
+# Individual: <pizza.owl#CaperTopping>",0.35093216266774685,"The pizzas that contain both MushroomTopping and MozzarellaTopping are: 
+- MUSHROOM 
+- FOURSEASONS 
+- NAPOLITANA 
+- MARGHERITA 
+- GIARDINIERA 
+- CAPRIC",0.5464797468929097
+5,Can a pizza have both HamTopping and AnchovyTopping without violating any disjoint restrictions?,DISJ,No,0.2189088827341527,Yes.,0.1989543870305287,"Yes, a pizza can have both HamTopping and AnchovyTopping without violating any disjoint restrictions.",0.788259369264789,"Yes,",0.20786689306795134,"Yes, <pizza.owl#American> <pizza.owl#AmericanHot> 
+Disjoint Classes(<pizza.owl#American> <pizza.owl# AmericanHot>), 
+Disjoint Classes(<pizza.owl#American > <pizza.owl#AmericanHot>",0.5496296752772253,"Yes, a pizza can have both HamTopping and AnchovyTopping without violating any disjoint restrictions. The disjoint restrictions in the ontology are between classes, not between individuals or properties. For example, the disjoint restriction between HamTopping and HerbSp",0.7763246435079516
+6,What makes a pizza incompatible with a ThinAndCrispyBase?,DISJ,A thick crust or a lot of heavy toppings.,0.441628328910426,"Toppings with high moisture content, such as excessive sauce, wet vegetables, or high-water-content meats.",0.37592778510788427,A pizza is incompatible with a ThinAndCrispyBase if it has a base that is not ThinAndCrispy.,0.8312130178880274,A pizza is incompatible with a ThinAndCrispyBase if it has a DeepPanBase.,0.8892557080233549,"A pizza that has a Thin And Crispy Base is not a pizza that is compatible with a Thin And Crispy Base.
+
+# Individual: <pizza.owl#France> (<pizza.owl#France>)
+
+Class Assertion (owl: Thing <",0.7039130575202326,"A pizza is incompatible with a ThinAndCrispyBase if it has a topping that is not compatible with the base. For example, a pizza with a SpicyTopping is incompatible with a ThinAndCrispyBase because SpicyT",0.7791345822570015
+7,What topping is classified as both spicy and vegetarian?,LOGIC,Jalapeño peppers.,0.5987108713831047,Jalapeño peppers.,0.5987897195010858,RocketTopping,0.425421202633849,The topping that is classified as both spicy and vegetarian is <pizza.owl#SpinachTopping>.,0.5517328262823147,"A spicy topping is a topping that has spiciness hot, and a vegetarian topping is a topping that has spiciness medium and a vegetarian topping. 
+
+# Class: <pizza.owl#VegetarianPizzaEquivalent1 > (Pizza Veget",0.5587121246867024,"According to the provided Pizza Ontology, the toppings that are classified as both spicy and vegetarian are:
+
+1. ArtichokeTopping 
+2. AsparagusTopping 
+3. CaperTopping 
+4. GarlicTopping 
+5",0.5748727575162957
+8,Which pizzas are defined to contain exactly two toppings?,CARD,Double topping pizzas.,0.3692290554876624,"Quattro formaggi is not one, but a ""two-topping"" example is a Capricciosa's variation, the ""Quattro Stagioni without the fourth topping"" is not one, but a classic example is the ""Marin",0.4586554028877989,Margherita and Quattro Formaggi are defined to contain exactly two toppings.,0.5759677252012482,"Pizzas that are defined to contain exactly two toppings are: 
+- American 
+- AmericanHot 
+- ArtichokeTopping 
+- AsparagusTopping 
+- CaperTopping 
+- Capricciosa 
+- Caprina 
+-",0.4004050489991544,"# Class: <pizza.owl#American> (Americana)
+
+AnnotationAssertion(rdfs:label <pizza.owl#American> ""Americana""@pt)
+SubClassOf(<pizza.owl#American > <pizza.owl#CheeseyPizza >)
+",0.28922691183207294,"The pizzas that are defined to contain exactly two toppings are:
+
+*   AmericanHot
+*   FourSeasons 
+
+These pizzas are defined to contain exactly two toppings.",0.31847646621071585
+9,Are there any pizzas that are both AmericanPizza and VegetarianPizza?,SUB,Yes.,0.4246881339214032,"Yes, examples include Roasted Vegetable Pizza and Mushroom and Spinach Pizza.",0.16411938399293396,"No, American pizzas have meat toppings, (Peperoni Sausage, and Ham), so they cannot be VegetarianPizzas.",0.1743018283262308,"No, there are no pizzas that are both AmericanPizza and VegetarianPizza.",0.23041875026051462,"# Step 1: <pizza.owl#American> 
+# Step 2: <pizza.owl#VegetarianPizza> 
+
+# Step 3: <pizza.owl#AmericanHot> 
+# Step 4: <pizza.owl#Ve",0.10503238661191724,"Yes, there are pizzas that are both AmericanPizza and VegetarianPizza.",0.12779985389646958
+10,Which toppings are disjoint with CheeseTopping?,DISJ,"None, since every topping can be paired with CheeseTopping.",0.6164248231234716,"None, as CheeseTopping is a subset of all pizza toppings and can be combined with any other topping.",0.5636014302795479,FishTopping and MeatTopping are disjoint with CheeseTopping.,0.5961712017472185,"The toppings that are disjoint with CheeseTopping are AnchoveiesTopping,ArtichokeTopping,AsparagusTopping,CajunSpiceTopping0,CaperTopping0Cajun0Capricciosa",0.6496203276930258,"The following toppings are disjoint with CheeseTopping: <pizza.owl#CajunSpiceTopping>, <pizza.owl#CheeseyPizza >, <pizza.owl#CheeseyVegetarianTopping>, <pizza.owl#Ve",0.5739438785602218,"The toppings that are disjoint with CheeseTopping are: 
+
+* ChickenTopping 
+* DeepPanBase 
+* FishTopping 
+* FourCheesesTopping 
+* FourSeasons 
+* Fruiting 
+* FruttiDiM",0.6463467919260382
+11,Is a QuattroFormaggiPizza classified as a CheesePizza?,SUB,Yes.,0.624694290476691,Yes.,0.624694290476691,"Yes, a QuattroFormaggiPizza is classified as a CheesePizza because it has FourCheesesTopping and TomatoTopping.",0.2372381900005104,"No, a QuattroFormaggi Pizza is not classified as a CheesePizza.",0.1381097281125239,"A Quattro Formaggi Pizza is a type of pizza that has at least  a topping of QuattroFormaggi, which is a type of Cheese Pizza. This type of pizza is defined as a Quattro Formaggi Pizza. 
+
+# Class:",0.11383264317900539,"No, a QuattroFormaggiPizza is not classified as a CheesePizza. According to the Pizza Ontology, a CheesePizza is defined as a pizza that has at least one cheese topping, and a QuattroFormaggiPizza is defined as a",0.1272282667107996
+12,What toppings are used in a SloppyGiuseppePizza?,IND,"Pepperoni, sausage, mushrooms, and onions.",0.6296516438071696,"Pepperoni, sausage, mushrooms, onions, and extra mozzarella cheese.",0.629133050552002,"GreenPepperTopping, HotSpicedBeefTopping, MozzarellaTopping, OnionTopping, and  TomatoTopping.",0.6781698989292757,"A SloppyGiuseppePizza has the following toppings: GreenPepper,opping,,, HotSpicedBeefTopping,,, MoxzarellaTopping,, OnionTopping,,, and TomatoTopping.",0.6372731520313955,"A Sloppy Giuseppe Pizza has the following toppings: MozzarellaTopping, <pizza.owl#MozzarellaTopping >, <pizza.owl#CajunSpiceTopping > <pizza.owl# Capricciosa> <",0.49187116269831666,"A SloppyGiuseppePizza has the following toppings: GreenPepper, Hot Spiced Beef, Mozzarella, Onion, and Tomato.",0.6943487408041058
+13,What distinguishes a VegetarianPizza from a NonVegetarianPizza?,SUB,The presence or absence of meat.,0.45723646653995054,The absence or presence of meat.,0.436274767212102,"A VegetarianPizza does not have fish topping and does not have meat topping, is a VegetarianPizza.",0.7765412219341813,A VegetarianPizza is distinguished from a NonVegetarianPizza because it does not have fish topping and does not have meat topping.,0.8216554936621258,"A non-vegetarian pizza is a pizza that only has vegetarian toppings or no toppings at all. A non-vegetarian pizza is a pizza that does not have fish topping and does not have meat topping. 
+
+# NonVegetarianPizza 
+",0.7558754788356963,"A VegetarianPizza is distinguished from a NonVegetarianPizza in that a VegetarianPizza does not have any meat toppings, whereas a NonVegetarianPizza does have meat toppings.",0.7814977601376224
+14,Which pizzas are defined to have a DeepPanBase?,PROP,Chicago-style pizzas.,0.1410231696126986,Chicago-style pizzas and Detroit-style pizzas.,0.08175411315057651,No specific pizzas are defined to have a DeepPanBase.,0.2770843333706233,The pizzas that are defined to have a DeepPanBase are those that are members of the class DeepPanBase.,0.18531872367904995,"# Class: <pizza.owl#DeepPanBase> 
+A Deep Pan Base is a type of base for a pizza that is defined to have a Deep Pan Base. It is defined to be a type of base for a pizza that is defined to",0.1771940413517873,"The pizzas defined to have a DeepPanBase are not explicitly stated in the provided ontology. However, it can be inferred that the DeepPanBase class is disjoint with other base classes such as ThinAndCrispyBase, and therefore, pizzas with",0.21746372905161546
+15,What type of base is used in a SoHoPizza?,IND,Sourdough,0.3335315615178115,Sicilian-style thick base,0.5919715858436199,ThinAndCrispyBase,0.6677394579845382,A SoHoPizza uses a ThinAndCrispyBase.,0.6130752876758185,"# Question: What type of base is used in a SoHo Pizza?
+
+# Base is used in a SoHo Pizza to refer to a base that is a part of a pizza. 
+
+# Base is used in a SoHo Pizza to refer to",0.5934092695269845,A SoHoPizza has a ThinAndCrispyBase.,0.5891822749339797
+16,Can a pizza have both PrawnTopping and ChickenTopping?,DISJ,Yes.,0.21877308241687937,Yes.,0.21877308241687937,"Yes, a pizza can have both PrawnTopping and ChickenTopping.",0.6132851845858402,"No, a pizza cannot have both PrawnTopping and ChickenTopping because PrawnsTopping and ChickenTopping are disjoint classes.",0.7835477988323536,"Yes, it can. A pizza with Prawn Topping and ChickenTopping> 
+
+# Individual: <pizza.owl#America> (<pizza.owl#America>)
+
+Class Assertion (<pizza.owl#Country> <pizza.owl#America>)
+
+
+#",0.5463839843628008,"No, a pizza cannot have both PrawnTopping and ChickenTopping. According to the provided ontology, PrawnTopping is a subclass of FishTopping, and ChickenTopping is a subclass of MeatTopping. The ontology states that",0.7615232969248459
+17,What is the minimum number of toppings on a SupremePizza?,CARD,4,0.27927005136732985,"4 (pepperoni, sausage, mushrooms, and onions, and sometimes also olives and bell peppers, but typically 4 main toppings are considered standard for a Supreme Pizza, however the exact number may vary)",0.0943677977606003,3,0.28769688543067085,The minimum number of toppings on a Supreme Pizza is 4.,0.13181568971719226,"A <pizza.owl#SupremePizza> ObjectIntersectionOf(<pizza.owl#Pizza> ObjectMinCardinality(3 <pizza.owl#hasTopping> )
+
+A <pizza.owl#SupremePizza > ObjectIntersectionOf(<pizza.owl#Pizza",0.14720565145973924,The minimum number of toppings on a SupremePizza is 3.,0.14647423467569531
+18,Is a VenezianaPizza suitable for vegetarians?,SUB,Yes.,0.624694290476691,"No, a Veneziana Pizza typically includes ham, so it's not suitable for vegetarians.",0.09089626664355793,"Yes, a VenezianaPizza is suitable for vegetarians.",0.2176427334639146,"No,",0.47076433445079163,"A Veneziana pizza is suitable for vegetarians.
+
+# Class: <pizza.owl#Veneziana> 
+
+# Class: <pizza.owl#Veneziana> 
+A Venziana pizza is suitable for vegetarians.
+
+# Class: <pizza",0.15335753279664918,"No, a VenezianaPizza is not suitable for vegetarians because it is a subclass of CheeseyPizza and NamedPizza, which may contain non-vegetarian toppings.",0.12271095749048219
+19,What spicy meat topping is commonly found on American-style pizzas?,IND,Pepperoni.,0.7024549954792363,Pepperoni.,0.7024549954792363,Peperoni Sausage Topping,0.8718121780907236,PeperoniSausageTopping is a spicy meat topping commonly found on American-style pizzas.,0.6795049099881902,"Spicy meat toppings are commonly found on American-style pizzas, and include pepperoni sausage, pizza, <pizza.owl#PepperoniSausageTopping>), jalapeno pepperoni sausage, pizza, <pizza.owl#Pepperoni",0.5387850683112434,The spicy meat topping commonly found on American-style pizzas is HotSpicedBeefTopping.,0.45409104325428246
+20,Which pizzas include OliveTopping as one of their ingredients?,PROP,Mediterranean and Greek pizzas.,0.4909828235025611,"Greek Pizza, Mediterranean Pizza, and Italian Pizza often include Olive as a topping.",0.4754774053765086,"Capricciosa, Giardiniera  Napoletana  PolloAdAstra  QuattroFormaggi  Rosa  SICILIANA  VENEZIANA",0.8636432451997009,"The following pizzas include OliveTopping as one of their ingredients:
+- Capricciosa
+- Caprina
+- Fiorentina
+- Giardiniera
+- Margherita
+- Napoletana
+- ParmesanTopping
+",0.6348451058132732,"The following pizzas include Olive Topping as one of their ingredients: <pizza.owl#OliveTopping>.
+
+
+# Class: <pizza.owl#OliveTopping> 
+Olive Topping is a topping that is often found on pizzas.",0.3425297543870661,"According to the provided Pizza Ontology, the following pizzas include OliveTopping as one of their ingredients:
+
+* Napoletana
+* FruttiDiMare 
+* Giardiniera 
+* Capricciosa 
+* Fiorentina",0.5640768101049733
+21,Are there any pizzas defined to be both HotAndSpicy and Vegetarian?,SUB,Yes.,0.4247627903795931,"Yes, some examples include the Jalapeño Veggie Pizza and the Spicy Roasted Vegetable Pizza.",0.16940982205661792,"No, the classes HotAndSpicy and Vegetarian are not defined in the provided Pizza Ontology.",0.2409144222647179,"No, there are no pizzas that are both Hot and Spicy and Vegetarian.",0.2434984218222453,"# Class: <pizza.owl#American> (Americana)
+
+AnnotationAssertion(rdfs:label <pizza.owl#American> ""Americana""@pt)
+SubClassOf(<pizza.owl#American> <pizza.owl#CheeseyPizza> 
+",0.09874107183435629,"Yes, there are pizzas defined to be both HotAndSpicy and Vegetarian. For example, the ArtichokeTopping, AsparagusTopping, and the SultanaTopping are all defined to be both HotAndSpicy and",0.1357312985383923
+22,What kind of topping is RocketTopping categorized as?,SUB,RocketTopping is categorized as a dessert topping.,0.47853167860801044,"Rocket Topping is categorized as a green topping, typically consisting of arugula or wild rocket leaves.",0.5440675309694016,VegetableTopping,0.9999999999999999,RocketTopping is categorized as a VegetableTopping.,0.7064830359099812,"# Class: <pizza.owl#RocketTopping> 
+# Class: <pizza.owl#RocketTopping> 
+# Class: <pizza.owl#RocketTopping> 
+# Class: <pizza.owl#RocketTopping> 
+# Class",0.4995012437149028,RocketTopping is categorized as a type of VegetableTopping.,0.6597660506785044
+23,Can a pizza be both a SeafoodPizza and a VegetarianPizza?,DISJ,No.,0.6367587789955316,No.,0.6329194622669219,"No, because SeafoodPizza and VegetarianPizza are disjoint.",0.26066028713435363,"No, a pizza cannot be both a SeafoodPizza and a VegetarianPizza.",0.24476454113926827,"A pizza can be both a Seafood Pizza and a Vegetarian Pizza.
+
+# Individual: <pizza.owl#Cajun> (<pizza.owl#Cajun>)
+
+# Class: <pizza.owl#Cajun> (Cajun",0.07575466823870747,"No, a pizza cannot be both a SeafoodPizza and a VegetarianPizza because these two classes are disjoint.",0.21336412544592195
+24,What are the common toppings on a NapolitanaPizza?,IND,"Tomato, mozzarella, anchovies, and capers.",0.8413411750179984,"Tomato, mozzarella, anchovies, and basil.",0.7862409462076646,"Anchovies, Caper  Ham  Mozzarella  Olive  Peperonata  Tomatoes",0.8936147236795268,"The common toppings on a NapolitanaPizza are AnchoveyTopping,, CaperTopping,,, MoxzarellaTopping2,, OLiveTopping2,,, TomatoTopping2.",0.6344866385308872,"The Napolitana Pizza has the following toppings: AnchoviesTopping, Caper Topping, Tomato Topping. 
+
+# Class: <pizza.owl#Napoletana> (Napoletana)
+
+AnnotationAssertion(rdfs:",0.5962264939833368,"According to the Pizza Ontology, a NapolitanaPizza is a type of pizza that has the following common toppings: 
+- AnchoviesTopping 
+- CaperTopping 
+- MoxzarellaTopping 
+- OliveTopping",0.625382926970028
+25,What is the difference between a TomatoTopping and a SundriedTomatoTopping?,SUB,"A TomatoTopping is made from fresh tomatoes, while a SundriedTomatoTopping is made from dried tomatoes.",0.697153071368056,"A Tomato Topping is fresh, whereas a Sundried Tomato Topping is dried.",0.6667671822989439,"TomatoTopping and SundriedTomatoTopping are both types of vegetable toppings, but SundriedTomatoTopping is specifically sundried, while TomatoTopping can be either sundried or not.",0.7598027745720635,A TomatoTopping and a SundriedTomatoTopping are different because a TomatoTopping is a subclass of TomatoTopping and a SundriedTomatoTopping is a subclass of TomatoTopping.,0.8324252476377517,A <pizza.owl#TomatoTopping> and a <pizza.owl#SundriedTomatoTopping> are two different classes that are subclasses of the <pizza.owl#PizzaTopping> class. The difference between the two classes is,0.6664303984411214,"A TomatoTopping and a SundriedTomatoTopping differ in their spiciness level, with TomatoTopping having a mild spiciness level and SundriedTomatoTopping having a mild spiciness level as well. However,",0.714679569699966
+26,What toppings are considered disjoint from MeatTopping?,DISJ,"VeggieTopping, CheeseTopping, SauceTopping.",0.8197370863961482,"VeggieTopping, CheeseTopping, SauceTopping, HerbTopping.",0.8728491350443168,FishTopping,0.6931461520111485,"Toppings that are considered disjoint from MeatTopping are:
+- AnchoviesTopping
+- ArtichokeTopping
+- AsparagusTopping
+- CaperTopping
+- Capricciosa
+- Caprina
+- Che",0.6894485002782729,"Disjoint Classes(<pizza.owl#MeatTopping> <pizza.owl# SpicyTopping>)
+
+
+# Class: <pizza.owl#MeatTopping > (<pizza.owl#MeatTopping >)
+
+SubClassOf(<pizza.owl",0.457760426988359,"MeatTopping is disjoint from the following toppings: MixedSeafoodTopping, MozzarellaTopping, Mushroom, MushroomTopping, NamedPizza, Napoletana, NutTopping, OliveTopping, OnionT",0.6627340006702145
+27,What class of pizza does an AmericanHotPizza belong to?,SUB,Spicy/Meat Lover's,0.5796993739638703,American-style pizza.,0.5031556644809267,AmericanHot,0.30647905844995466,An AmericanHotPizza belongs to the class <pizza.owl#AmericanHot>.,0.4729497568242078,"The class of AmericanHot Pizza is <pizza.owl#American>. This class is a subclass of <pizza.owl#CheeseyPizza >, <pizza.owl#InterestingPizza > and <pizza.owl#MeatyPizza >. It is also",0.5049888968557812,An AmericanHotPizza belongs to the class AmericanHot.,0.518854763251841
+28,Can a pizza have more than one type of cheese topping?,CARD,Yes.,0.31541183254178673,Yes.,0.31541183254178673,"Yes, a pizza can have more than one type of cheese topping.",1.0000000000000002,"Yes, a pizza can have more than one type of cheese topping.",1.0000000000000002,A pizza can have more than one type of cheese topping. This is because a pizza must have at least one cheese topping.,0.837043171247703,"According to the Pizza Ontology, a pizza can have more than one type of cheese topping. The ontology defines a class `CheeseyPizza` that is equivalent to the intersection of `Pizza` and the restriction that it has at least one cheese",0.6283057714023641
+29,Which pizzas are built using a ThinAndCrispyBase?,PROP,Margherita and Pepperoni Pizzas.,0.5692481284904707,"Roman, Italian, and Flatbread pizzas.",0.6074704125970006,Pizzas built using a ThinAndCrispyBase are RealItalianPizzas.,0.48939232624917783,"The pizzas that are built using a ThinAndCrispyBase are RealItalianPizzas, because all RealItalianPizzas must have ThinAndCrispy bases.",0.4601706505089736,"A Thin And Crispy Base is a type of pizza base that is characterized by a thin crust. It is a type of base that is used to make a pizza and is the foundation of a pizza. 
+
+# Class: <pizza.owl#",0.37632320699363575,The pizzas built using a ThinAndCrispyBase are the ThinAndCrispyPizza.,0.3786578406603705
+30,Is there a pizza that includes both CaperTopping and AnchovyTopping?,PROP,Yes.,0.3674620044232282,"Yes, a traditional Neapolitan-style pizza, specifically the ""Quattro Stagioni"" or ""Pizza alla Puttanesca"", often includes both capers and anchovies as toppings.",0.6728829289323935,"Yes, the Capricciosa includes both CaperTopping and AnchovyTopping.",0.6316868620596319,"No, there is no pizza that includes both CaperTopping and AnchovyTopping. According to the given Pizza Ontology,, pizza.owl#CaperTopping and pizza.owl#AnchovyTopping are disjoint classes.",0.43183281710025445,"# Prefix(<#American> 
+# Prefix(<#American> <pizza.owl#American> )
+
+# Class: <pizza.owl#AmericanHot> (AmericanaHot)
+
+AnnotationAssertion(rdfs:label <pizza.owl#AmericanHot> ""Americ",0.32157063823299115,"No, there is no pizza that includes both CaperTopping and AnchovyTopping, as they are disjoint classes.",0.4692071518466283
+31,Which pizzas use GarlicTopping as an ingredient?,PROP,"Meat Lover's Pizza, Italian Pizza, and Chicken Supreme Pizza.",0.4830210337816609,"Garlic Chicken Pizza, Garlic Shrimp Pizza, and White Garlic Pizza.",0.4865899732824547,"Giardiniera, and Siciliana.",0.57557121886004,"Pizzas that use GarlicTopping as an ingredient are:
+- <pizza.owl#Siciliana>
+- <pizza.owl#SloppyGiuseppe> 
+- <pizza.owl#Soho> 
+- <pizza.owl#Rosa",0.48913900640838726,"The following pizzas use garlic topping as an ingredient: 
+- American 
+- pizza.owl#American 
+- American 
+- pizza.owl# AmericanHot 
+- AmericanHot 
+- pizza.owl# AmericanHot 
+- pizza.owl# AmericanHot 
+- American",0.4128210972779383,"According to the Pizza Ontology, the following pizzas use GarlicTopping as an ingredient:
+
+1. Fiorentina
+2. FruttiDiMare
+3. Giardiniera",0.49650053891801876
+32,What toppings are only allowed on a VegetarianPizza?,DISJ,"Mushrooms, onions, bell peppers, tomatoes, olives, and cheese.",0.15342355246759296,"Mushrooms, onions, bell peppers, tomatoes, olives, and cheese.",0.15342355246759296,"CheeseTopping, or  Fruittopping or HerbSpiceTopping or NutTopping or SauceTopping or VegetableTopping",0.20770717134298425,VegetableTopping.,0.2060203543294463,"A Vegetarian Pizza is a pizza that has only vegetarian toppings. The definition of a Vegetarian Pizza does not require a definition of Vegetarian Topping. 
+
+# Class: <pizza.owl#VegetarianTopping> 
+A pizza that has",0.09220596279608781,"According to the provided Pizza Ontology, the following toppings are only allowed on a VegetarianPizza:
+
+1. CheeseTopping
+2. Fruittopping
+3. HerbSpiceTopping
+4. NutTopping
+5. S",0.20349487496805468
+33,Is ArtichokeTopping considered a vegetable topping?,SUB,Yes.,0.624694290476691,Yes.,0.624694290476691,"Yes, ArtichokeTopping is considered a vegetable topping.",0.2413930691310968,"Yes, ArtichokeTopping is considered a vegetable topping.",0.2413930691310968,"Artichoke Topping is a type of topping that is considered a vegetable topping. It is a type of pizza topping that is considered a vegetable topping. 
+
+# Class: <pizza.owl#VegetarianPizza > 
+
+# Class: <pizza",0.08841311474747977,"Yes, ArtichokeTopping is considered a vegetable topping.",0.2413930691310968
+34,Which pizzas contain more than three toppings?,CARD,Meat Lover's and Supreme pizzas.,0.5083901628645282,"Meat Lover's, Supreme, and Deluxe pizzas.",0.5846180505073497,InterestingPizza,0.4605715194266837,"The following pizzas contain more than three toppings:
+* <pizza.owl#PolloAdAstra>
+* <pizza.owl#QuattroFormaggi>",0.5601397339286046,"The Pizza Ontology contains several classes that describe different types of pizzas, an example of a pizza that has more than  < pizza.owl#PizzaTopping> is a pizza that has more than three toppings. 
+The American pizza contains a topping of",0.42343987339130695,"Based on the provided Pizza Ontology, the following pizzas contain more than three toppings:
+
+1. InterestingPizza: This class is defined as any pizza that has at least 3 toppings.
+2. AmericanHot: This pizza has toppings such as HotGreen",0.4904175639544406
+35,What distinguishes a MeatTopping from a FishTopping?,SUB,The type of protein.,0.285014810361178,"The type of protein: meat (e.g. pepperoni, sausage) versus fish (e.g. anchovies, shrimp).",0.5715519914625257,"MeatTopping is distinguished from FishTopping by the fact that MeatTopping is not a subclass of FishTopping, - they are both subclasses of PizzaTopping but have different parents, as they are disjoint from each other.",0.9067147327194014,"A MeatTopping is distinguished from a FishTopping because it is a subclass of PizzaTopping, while FishTopping is a subclass of PizzaTopping as well.",0.9037229407725829,A Meat Topping is a topping that is typically found on a pizza. The class of MeatTopping is a subclass of the class MeatTopping and it is a type of topping. It is a type of topping that is typically found on a,0.7788989540576221,"A MeatTopping is distinguished from a FishTopping by the fact that MeatTopping is a subclass of PizzaTopping, while FishTopping is a separate class that is also a subclass of PizzaTopping. This distinction is based on the",0.8774118592934984
+36,Which topping would violate vegetarian restrictions if added to a MargheritaPizza?,DISJ,Pepperoni or any other meat product.,0.6318082938532229,Pepperoni or any other meat topping.,0.7145265929842015,HamTopping,0.4326432695221091,"A topping that would violate vegetarian restrictions if added to a MargheritaPizza is a non-vegetarian topping, as MargheritaPizza is defined as a pizza that has a ham topping and a mozzarella topping.",0.5192110876298819,"# Margherita Pizza is a type of pizza that has at least one topping that is both a pizza topping and has spiciness medium. This violates the vegetarian restrictions of the pizza. 
+
+# Margherita Pizza
+CoberturaDe Marg",0.4960173466313256,"The topping that would violate vegetarian restrictions if added to a MargheritaPizza is any non-vegetarian topping, such as meat or fish.",0.6000838195501254
+37,What cheese toppings are used in a FourCheesePizza?,IND,"Mozzarella, Parmesan, Gorgonzola, and Ricotta.",0.5626781510495507,"Mozzarella, Parmesan, Gorgonzola, and Ricotta.",0.5626781510495507,FourCheeseTopping,0.9655706419259338,FourCheesesTopping is a type of CheeseTopping.,0.8432285991362743,"The FourCheeses Pizza is a pizza that has four cheese toppings. 
+
+# Class: <pizza.owl#FourCheesesTopping> 
+
+AnnotationAssertion(rdfs:label <pizza.owl#FourCheesesTopping> ""FourCheesesT",0.6840817616856685,"According to the Pizza Ontology, a FourCheesesPizza is a type of CheeseyPizza that has at least one FourCheesesTopping. The FourCheesesTopping is a type of CheeseTopping. Therefore, the cheese",0.6619442821432319
+38,Which pizzas contain both OnionTopping and PepperTopping?,PROP,Pizzas 1 and 3.,0.3867779461113249,"Meat Lover's, BBQ Chicken, and Supreme pizzas.",0.5148451211935426,"PolloAdAstra, and Saho.",0.5171928054070872,Pizzas that contain both OnionTopping and PepperTopping are those that have at least one topping that is both an OnionTopping and a PepperTopping.,0.22198877375202608,"The following pizzas contain both Onion Topping and Pepper Topping: QuattroFormaggi, <pizza.owl#QuattroFormaggi> and FourSeasons <pizza.owl#PolloAdAstra> and LaReine <pizza.owl#Me",0.34714014834556334,"Based on the provided Pizza Ontology, the pizzas that contain both OnionTopping and PepperTopping are:
+
+1. PolloAdAstra 
+2. QuattroFormaggi 
+3. RealItalianPizza 
+4. SultanaTopping",0.38601781002289975
+39,Is there a pizza with both HamTopping and MushroomTopping?,PROP,Yes.,0.14241849587260424,"Yes, a Hawaiian pizza typically has HamTopping and some variations may include MushroomTopping.",0.027718051937684316,"Yes, the Giardiniera and the LaReine both have HamTopping and MushroomTopping.",0.2954388107360642,"No, there is no pizza with both HamTopping and MushroomTopping.",0.055865086791109984,The American Hot and the American Hot and the American Hot and the American Hot and the American Hot are all the toppings of the American Hot and the American Hot and the American Hot and the American Hot and the American Hot and the American Hot and the American,0.09470260114680741,"Yes, there is a pizza with both HamTopping and MushroomTopping, which is the Capricciosa pizza.",0.05821064689111361
+40,Which toppings are used in pizzas classified as SeafoodPizza?,SUB,"Shrimp, anchovies, mussels, clams, and scallops.",0.4688583745611492,"Shrimp, anchovies, mussels, clams, and calamari.",0.47663017481301306,"AnchoviesTopping, and MixedSeafoodTopping and PrawnsTopping.",0.8394797558245044,"Pizzas classified as SeafoodPizza use the following toppings: 
+- AnchoviesTopping 
+- CaperTopping 
+- FishTopping 
+- PrawnsTopping 
+- RocketTopping",0.771614962882911,"Toppings used in pizzas classified as Seafood Pizza include:
+
+*   AnchoviesTopping 
+*   Artichoke Topping 
+*   Caper Topping 
+*   MuzzarellaTopping 
+*   Tomato Topping",0.7364735790535671,"According to the provided Pizza Ontology, the toppings used in pizzas classified as SeafoodPizza are not explicitly stated. However, based on the ontology, it can be inferred that SeafoodPizza might include toppings such as AnchoviesTopping, FishT",0.6798283462085523
+41,Which pizza includes HotGreenPepperTopping?,IND,"The ""Meat Lover's Delight"" pizza includes HotGreenPepperTopping, but more commonly, the ""Veggie Supreme"" and ""Spicy Italian"" pizzas include this topping.",0.32228203653097764,Jalapeño Pizza.,0.3213742982801133,AmericanHot,0.835127447691196,"HotGreenPepperTopping is included in the following pizzas: 
+- AmericanHot
+- CajunSpiceTopping 
+- Capricciosa 
+- Caprina 
+- Fiorentina 
+- FourSeasons 
+- Frutti",0.3971191903451385,"The <pizza.owl#American> has <pizza.owl#hasTopping> <pizza.owl#HotGreenPepperTopping>). 
+# The <pizza.owl#American> has <pizza.owl# hasTopping> <pizza.owl#",0.35365632353647103,HotGreenPepperTopping is included in the AmericanHot pizza.,0.4253840814994359
+42,Is there a pizza that is both spicy and contains seafood toppings?,LOGIC,Yes.,0.4246881339214032,"Yes, a Spicy Shrimp Pizza.",0.2104677934810766,"Yes, the MixedSeafoodTopping is both spicy and contains seafood toppings.",0.1644249915015713,"No, there is no pizza that is both spicy and contains seafood toppings.",0.24448459836215503,"Yes, <pizza.owl#AmericanHot> is a pizza that is both spicy and contains seafood toppings.
+
+# Class: <pizza.owl#AmericanHot> 
+
+SubClassOf(<pizza.owl#SpicyPizza> 
+SubClassOf (<pizza.owl",0.144549440244388,"Yes, there is a pizza that is both spicy and contains seafood toppings. The AmericanHot pizza contains HotGreenPepperTopping, which is a SpicyTopping, and PrawnsTopping, which is a type of SeafoodT",0.14564713878180496
+43,What pizzas are incompatible with CheeseTopping?,DISJ,"Pizzas that already have cheese as a primary topping, such as Cheese Pizza or Four Cheese Pizza, are incompatible with Cheese Topping.",0.14696131807817492,"Pizzas with dairy-free or vegan cheese alternatives, and pizzas with strong flavor profiles that clash with cheese, such as anchovy or blue cheese pizzas with additional cheese are incompatible with Cheese Topping.",0.16846354225962865,CheesyVegetableTopping is incompatible with CheeseTopping.,0.19948855134322344,"Pizzas that are incompatible with CheeseTopping are: 
+- American
+- AmericanHot
+- AnchoveiesTopping
+- ArtichokeTopping
+- AsparagusTopping
+- CaperTopping
+- Capricc",0.2439289219640971,"# Class: <pizza.owl#CheeseTopping> 
+# Class: <pizza.owl#CheeseTopping > 
+# Class: <pizza.owl#CheeseTopping> 
+SubClassOf(<pizza.owl#CheeseTopping",0.20083503198568567,"The following pizzas are incompatible with CheeseTopping: 
+
+* CheeseyPizza 
+* CheeseyVegetableTopping 
+* ChickenTopping 
+* DeepPanBase 
+* FishTopping 
+* FourCheesesTopping 
+*",0.22651002602537168
+44,What are the ingredient constraints on a VegetarianHotPizza?,LOGIC,"No meat, fish, or poultry.",0.1025251563343722,"No meat, including beef, pork, and chicken.",0.11477493340251291,"A VegetarianHotPizza has the following ingredient constraints: 
+- It must be a Pizza.
+- It must have at least one topping that is both a PizzaTopping and has spiciness Hot.",0.10213645822647213,"The ingredient constraints on a VegetarianHotPizza are: 
+- hasTopping some (VegetableTopping)
+- hasSpiciness some (Hot)",0.11085415744751698,"#   Class: <pizza.owl#VegetarianHotPizza> (CoberturaDeVegetarianHotPizza)
+
+AnnotationAssertion(rdfs:comment <pizza.owl#VegetarianHotPizza> ""A VegetarianHot Pizza is a pizza",0.10837844444920001,A VegetarianHotPizza must have at least one hot topping and no meat toppings.,0.12123759065524697
+45,What pizza includes LeekTopping?,IND,Quattro Formaggi e Leek pizza,0.34362925557306323,Potato and Leek Pizza.,0.2720685296070603,"Giardiniera, PolloAdAstra, and PrinceCarlo.",0.6848388165751811,A pizza that includes LeekTopping is one that has LeekTopping as a topping.,0.21967458374081755,"The pizza that includes Leek Topping is a pizza that has a Leek Topping. 
+
+# Class: <pizza.owl#LeekTopping> (CoberturaDeLeek)
+
+AnnotationAssertion(rdfs:label <pizza.owl#",0.20792332568659896,"According to the provided Pizza Ontology, the following pizzas include LeekTopping:
+
+1. Giardiniera
+2. PrinceCarlo",0.4777526636877003
+46,Which pizzas are defined using exactly one topping?,CARD,"Cheese pizza, Pepperoni pizza, Sausage pizza, Mushroom pizza, Onion pizza, etc.",0.15727406005944253,"Pizzas with a single topping are often referred to as ""mono-topping"" or ""single-topping"" pizzas, examples include:
+- Cheese pizza
+- Margherita pizza 
+- Pepperoni pizza 
+- Mushroom pizza 
+- Sausage",0.12173359021848724,"The following pizzas are defined using exactly one topping:
+- Cajun (MozzarellaTopping, and one of OnionTopping, PeperonataTopping, PrawnsTopping, TobascoPepperSauce, or Tomato",0.1940028144629285,"The following pizzas are defined using exactly one topping:
+- American: M,zarellaTopping, or PeperoniSausageTopping or TomatoTopping
+- AmericanHot: M0zzarellaTopping or PeperoniS",0.1809285229378602,"A pizza can be defined using exactly one topping - which can only be one topping. The one topping can be either cheese, pizza, a Meat Topping, a Spicy Pizza, a Vegetarian Pizza>.
+
+# Class: <pizza.owl#",0.18370657137270166,"The following pizzas are defined using exactly one topping:
+- MeatyPizza (has at least one meat topping)
+- CheeseyPizza (has at least one cheese topping)",0.1652776976071465
+47,What kinds of pizzas can have PineappleTopping?,PROP,Hawaiian and Ham or Prosciutto pizzas.,0.39169170240469453,"Hawaiian pizza, Ham and Pineapple pizza, and some gourmet or specialty pizzas.",0.500371770307444,"PineappleTopping is not defined in the provided Pizza Ontology. However, it can be inferred that pizzas that can have PineappleTopping are likely to be FruitPizzas or Pizzas with FruitToppings, since Pineapple is",0.7548719446338612,"PineappleTopping can be found on pizzas that are QuattroFormaggi, Fiorentina, PolloAdAstra, and PrawnsTopping.",0.6012605689643569,"Pineapple Topping is a type of pizza topping. 
+
+# Class: <pizza.owl#PineKernels> (CoberturaPineKernels)
+
+AnnotationAssertion(rdfs: label <pizza.owl#PineKernels> """,0.6583378368205928,"According to the provided Pizza Ontology, PineappleTopping is not a valid topping, as it is not defined in the ontology.",0.7870983722383648
+48,Which toppings are used on pizzas with a DeepPanBase?,PROP,"Tomato sauce, cheese, and various meats and vegetables.",0.08285161551070117,"Pepperoni, Sausage, Mushrooms, Onions, and Extra Cheese.",0.15040330133781035,Toppings used on pizzas with a DeepPanBase are not specified in the provided Pizza Ontology.,0.14937725119260054,"The toppings used on pizzas with a DeepPanBase are: 
+- CaperTopping
+- MozzarellaTopping 
+- HamTopping 
+- Herbs 
+- HotSpicedBeefTopping 
+- JalapenoPe",0.1255050028719476,"The toppings used on pizzas with a Deep Pan Base include: AnchoviesTopping, <pizza.owl#AnchoviesTopping>), Artichoke Topping, <pizza.owl# ArtichokeTopping>), Caper Topping,",0.1128886181165358,"According to the provided Pizza Ontology, the toppings used on pizzas with a DeepPanBase are not explicitly defined. However, we can infer that the toppings used on pizzas with a DeepPanBase are likely to be similar to those used on pizzas with",0.1086874765159779
+49,Can a pizza be both ItalianPizza and AmericanPizza at the same time?,DISJ,Yes.,0.16118900201349756,"No, a pizza can have characteristics of both, but it's typically classified as one or the other based on ingredients, crust style, and preparation methods.",0.5750865297075833,"No, ItalianPizza and AmericanPizza are disjoint classes.",0.7556625404902731,"No, a pizza cannot be both ItalianPizza and AmericanPizza at the same time, because these two classes are disjoint.",0.8580390492618906,"Yes, the American Pizza and Italian Pizza can be both at the same time. 
+
+# Step 1: Determine the type of the pizza. 
+The American Pizza and Italian Pizza are both types of pizza. They are also both Italian and American.",0.6574180622743182,"No, a pizza cannot be both ItalianPizza and AmericanPizza at the same time. This is because the hasCountryOfOrigin property is functional, meaning that each pizza can only have one country of origin. ItalianPizza and AmericanPizza have different countries of",0.9142654913028063
+50,What is the cardinality restriction on toppings for a MargheritaPizza?,CARD,At most 2 toppings (tomato and mozzarella cheese) and basil.,0.8047281118145526,"Only 3 toppings are allowed: tomato sauce, mozzarella cheese, and fresh basil.",0.6610614270828852,"At least 2 toppings from {MozzarellaTopping, and  TomatoTopping}.",0.7828830351648469,"A MargheritaPizza has a cardinality restriction of 1 on toppings, - it must have exactly one topping.",0.5946643981216997,"The cardinality restriction on toppings for a Margherita Pizza is: 
+# CardinalityOf(<pizza.owl#Margherita> <pizza.owl#hasTopping> <pizza.owl# FourCheesesTopping> <pizza.owl# Four",0.5285057880118298,The cardinality restriction on toppings for a MargheritaPizza is that it must have at least one topping of Mozzarella and at least one topping of Tomato.,0.6519948330587179
+51,Are MozzarellaTopping and GoatCheeseTopping disjoint?,DISJ,Yes.,0.6245930741620191,Yes.,0.6245930741620191,"Yes, MozzarellaTopping and GoatCheeseTopping are disjoint.",0.22639262384967992,"Yes, MozzarellaTopping and GoatCheeseTopping are disjoint.",0.22639262384967992,"# Class: <pizza.owl#GoatCheeseTopping > 
+SubClassOf(<pizza.owl#GoatCheeseTopping> <pizza.owl#VegetarianPizzaEquivalent1> 
+SubClass Of (<pizza.owl#Goat",0.1343709720507834,"Yes, MozzarellaTopping and GoatCheeseTopping are disjoint.",0.22639262384967992
+52,Which pizzas include SpicyBeefTopping?,PROP,Meat Lover's and Blazing Inferno pizzas.,0.3708939975420248,Meat Lover's Pizza and Spicy Italian Pizza.,0.4299888332837818,SloppyGiuseppe,0.8230888729775252,"Pizzas that include SpicyBeefTopping are: 
+- AmericanHot 
+- American 
+- Capricciosa 
+- Caprina 
+- Fiorentina 
+- FourSeasons 
+- FruttiDiMare 
+- Gi",0.37846953889980883,"The pizzas that include Spicy Beef Topping are:
+- <pizza.owl#AmericanHot> 
+- <pizza.owl# AmericanHot> 
+- <pizza.owl# AmericanHot> 
+- <pizza.owl# AmericanHot > 
+- <",0.28857747179553384,"According to the provided Pizza Ontology, SpicyBeefTopping is a subclass of MeatTopping and SpicyTopping. However, there is no direct mention of a pizza that includes SpicyBeefTopping as a topping.
+
+",0.2601150618218433
+53,Which pizzas are defined with no meat toppings at all?,LOGIC,Vegetarian pizzas.,1.0,"Veggie pizzas, Cheese pizzas, and Margherita pizzas.",0.7551606852015419,VegetarianPizza,0.7815866543525829,Pizzas that do not have fish topping and do not have meat topping are VegetarianPizzas.,0.6946156817410367,"The pizzas that are defined with no meat toppings at all are the Quattro Formaggi, <pizza.owl#QuattroFormaggi> and the Quattro Formaggi <pizza.owl#SpicyPizza >. 
+
+# Class: <pizza.owl#",0.5811808381280504,The pizzas with no meat toppings at all are the VegetarianPizza.,0.7332743882746967
+54,Which toppings would be illegal to add to a classified VegetarianPizza?,DISJ,"Meat, fish, and poultry.",0.4027269783097,"Meat, fish, and poultry.",0.40355331073579986,FishTopping and MeatTopping,0.7209918146461749,"Based on the given Pizza Ontology,, the following toppings would be illegal to add to a classified VegetarianPizza:
+- FishTopping 
+- MeatTopping 
+- CaperTopping 
+- HotSpicedBeefTopping 
+-",0.798468132799957,A classified Vegetarian Pizza is not a valid answer because it does not satisfy the definition of a Vegetarian Pizza. Any pizza that has a topping that is not a valid topping is not a valid answer because it does not satisfy the definition of a Veget,0.6113991566175786,"According to the provided Pizza Ontology, a VegetarianPizza is defined as a pizza that does not have fish topping and does not have meat topping. Therefore, any topping that is a FishTopping or a MeatTopping would be illegal to add",0.7960877085616327
+55,Are there any pizzas that include both TomatoTopping and LeekTopping?,PROP,Yes.,0.17095260698003667,"Yes, some pizzas include both Tomato and Leek as toppings.",0.24809355598683724,"Yes, the FourSeasons and the Giardiniera pizzas include both TomatoTopping and LeekTopping.",0.3909040811997896,"Yes, there are pizzas that include both TomatoTopping and LeekTopping.",0.26499218440696237,"The <pizza.owl#American> has Tomato Topping and Leek Topping. 
+The <pizza.owl#American> has Tomato Topping and Leek Topping. 
+The <pizza.owl# American> has Tomato Topping and Leek",0.19462032521620565,"Yes, there are pizzas that include both TomatoTopping and LeekTopping. For example, the Giardiniera pizza includes both TomatoTopping and LeekTopping.",0.32316910950297867
+56,What type of pizzas include FishTopping but not CheeseTopping?,LOGIC,Seafood pizzas.,0.45566462917061845,"Seafood pizza, specifically those featuring anchovies or sardines, may include FishTopping but not CheeseTopping, although this can vary by recipe.",0.3877476795539668,SeafoodTopping,0.48080818958418825,<pizza.owl#FishTopping> is a type of pizza that includes FishTopping but not CheeseTopping.,0.2406898701776464,"FishTopping is a type of pizza topping. However, the question asks about the type of pizza that includes FishTopping but excludes Cheese Topping. 
+The type of pizzas that include Fish Topping but not Cheese Topping> is ""Fish",0.2718366770720477,"According to the provided Pizza Ontology, the type of pizzas that include FishTopping but not CheeseTopping are the ones that are members of the class ""MixedSeafoodTopping"". 
+
+This is because MixedSeafoodTopping is a subclass",0.3043080223799918
+57,Which pizzas are classified as having spicy toppings only?,LOGIC,"Jalapeño popper pizza, Ghost Pepper pizza.",0.13471984517416585,"Jalapeño popper pizza, Ghost Pepper pizza, and Spicy Italian sausage pizza.",0.14290775578693893,Pizzas with Hot Spicy Toppings are classified as having spicy toppings only.,0.13902729104046174,Pizzas that are classified as having spicy toppings only are those with at least one topping that is both a PizzaTopping and has spiciness hot.,0.1397694301562225,"The following pizzas are classified as having spicy toppings only:
+    <pizza.owl#American> 
+    <pizza.owl# AmericanHot> 
+    <pizza.owl# AmericanHot> 
+    <pizza.owl# American> 
+    <pizza.owl#",0.17029254287532333,"Based on the provided Pizza Ontology, the following pizzas are classified as having spicy toppings only:
+
+1. Cajun
+2. CajunSpiceTopping
+3. AmericanHot
+4. HotGreenPepperTopping
+5. Hot",0.18699826106076528
+58,Is JalapenoTopping considered a HotTopping?,SUB,Yes.,0.4246881339214032,Yes.,0.4232111034789463,"Yes, JalapenoTopping is considered a HotTopping.",0.18826293506681102,"Yes, JalapenoTopping is considered a HotTopping.",0.18826293506681102,"Yes, the <pizza.owl#JalapenoTopping> is a hot topping. 
+
+# Class: <pizza.owl#JalapenoPepperTopping> 
+SubClassOf(<pizza.owl#JalapenoPepper",0.16170082504002703,"Yes, JalapenoTopping is considered a HotTopping.",0.18826293506681102
+59,What distinguishes a CheeseTopping from a VegetableTopping in the ontology?,SUB,Type and edible category.,0.39668360384664314,"Dairy content: CheeseTopping contains dairy, VegetableTopping does not.",0.6858351012340038,"In the ontology, - nothing explicitly distinguishes a CheeseTopping from a VegetableTopping. However, they are defined as disjoint subclasses of PizzaTopping.",0.8558704352650671,A CheeseTopping is distinguished from a VegetableTopping by the fact that a CheeseTopping is a subclass of CheeseTopping and a VegetableTopping is a subclass of VegetableTopping.,0.8283230847895371,"A cheese topping is a topping that has cheese as its main ingredient. A vegetable topping is a topping that has vegetables as its main ingredients. In the pizza ontology, a cheese topping is a type of topping that is both a cheese topping and a vegetable",0.7313131110755242,"A CheeseTopping is distinguished from a VegetableTopping in the ontology because they are disjoint classes, meaning they have no common instances. This is explicitly stated in the ontology using the `owl:disjointWith` property.",0.898172585525308
+60,What pizzas use both ThinAndCrispyBase and a spicy topping?,LOGIC,"Jalapeno Popper, Spicy Italian, and Buffalo Chicken pizzas.",0.15784621913270236,Pizzas that use both ThinAndCrispyBase and a spicy topping include the Spicy Italian and the Jalapeno Popper.,0.14620137293188432,ThinAndCrispyPizza and RealItalianPizza.,0.17145192289582617,The pizzas that use both ThinAndCrispyBase and a spicy topping are those that are members of both the ThinAndCrispyPizza and the SpicyPizza classes.,0.17157881130665625,"# Question: What pizzas use both Thin And Crispy Base and a spicy topping?
+A ThinAnd Crispy Base: A pizza that has a base made of thin and crispy base and a spicy topping
+B Spicy Topping : A",0.17534004642662068,"Based on the provided Pizza Ontology, the pizzas that use both ThinAndCrispyBase and a spicy topping are:
+
+1. PolloAdAstra
+2. SICiliana 
+3. SLOppyGIUSEPPE 
+",0.21442962739871024
